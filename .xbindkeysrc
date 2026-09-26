@@ -1,4 +1,4 @@
-#xev !!!
+#xev!
 # Terminal
 "st -f 'monospace:size=10' -e tmux"
     Mod4 + Return
