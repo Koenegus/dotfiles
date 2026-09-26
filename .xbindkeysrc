@@ -38,7 +38,7 @@
 
 # print - clipboard
 "/home/ivan/Scripts/scrot_xclip.sh"
-    Mod4 + Shift + Print
+    Shift + Print
 
 # Geany
 "geany"
