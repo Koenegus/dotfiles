@@ -1,0 +1,99 @@
+#xev !!!
+
+# Terminal
+"st -f 'monospace:size=10' -e tmux"
+    Mod4 + Return
+
+# dmenu
+"/home/ivan/Scripts/dmenu.sh"
+    Mod4 + r
+
+# LibreWolf
+"doas jexec -u ivan browsers librewolf"
+    Mod4 + w
+
+# Chromium
+"doas jexec -u ivan browsers chrome"
+    Mod4 + c
+	
+# File Manager
+"thunar"
+    Mod4 + f
+
+# LibreOffice
+#"SAL_USE_VCLPLUGIN=gen libreoffice"
+"libreoffice"
+    Mod4 + o
+
+# Claws Mail
+"claws-mail"
+    Mod4 + e
+
+# Editor
+"leafpad"
+    Mod4 + v
+
+# screenshot
+"/home/ivan/Scripts/scrot.sh"
+    Mod4 + Print
+
+# Geany
+"geany"
+    Mod4 + g
+
+# Resize screen
+"~/Scripts/screen.sh"
+    Mod4 + Shift + s
+
+# Pause
+"~/Scripts/pause.sh -a"
+    Mod4 + p
+
+# Pause MPV
+"/home/ivan/Scripts/mpv-command.py cycle pause"
+    Mod4 + space
+
+# Lock
+"slock"
+    Mod4 + l
+
+# wifi
+"wifimgr"
+    Mod4 + n
+
+# Suspend
+"~/Scripts/lock.sh"
+    Mod4 + Shift + l
+
+# Restart Tint2
+"~/Scripts/tint2.sh"
+   Mod4 + Shift + t
+
+# Restart Tint2
+"~/Scripts/kill2.sh"
+   Mod4 + Shift + g
+
+# kill
+"xkill"
+   Mod4 + Shift + x
+
+#umount
+"/home/ivan/Scripts/umont.sh"
+   Mod4 + Shift + u
+
+# Brightness Up
+"backlight incr 5"
+    XF86MonBrightnessUp
+
+# Brightness Down
+"backlight decr 5"
+    XF86MonBrightnessDown
+
+"/home/ivan/Scripts/audio_up.sh"
+  XF86AudioRaiseVolume
+
+"/home/ivan/Scripts/audio_down.sh"
+  XF86AudioLowerVolume
+
+"/home/ivan/Scripts/audio_mute.sh"
+  XF86AudioMute
