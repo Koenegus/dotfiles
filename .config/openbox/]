@@ -1,0 +1,498 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<openbox_menu xmlns="http://openbox.org/3.4/menu">
+  
+  <menu id="root-menu" label="Openbox Root Menu">
+     <item label="Terminal" icon="/usr/local/share/icons/Papirus/48x48/apps/terminal.svg">
+      <action name="Execute">
+        <command>st -f monospace:size=10 tmux</command>
+      </action>
+    </item>
+
+    <item label="File Manager" icon="/usr/local/share/icons/Numix/48/places/folder.svg">
+      <action name="Execute">
+        <command>thunar</command>
+      </action>
+	</item>
+
+       <item label="Claws Mail" icon="/usr/local/share/icons/hicolor/48x48/apps/claws-mail.png">
+        <action name="Execute">
+          <command>claws-mail</command>
+        </action>
+		</item>
+
+	<menu id="submenu-internet" label="Browsers" icon="/usr/local/share/icons/Papirus/48x48/apps/knemo.svg">
+	    <item label="Librewolf" icon="/usr/local/share/icons/Papirus/48x48/apps/librewolf.svg">
+        <action name="Execute">
+          <command>doas jexec -u ivan browsers librewolf</command>
+        </action>
+      </item>
+      <item label="Chromium" icon ="/usr/local/share/icons/Papirus/48x48/apps/chromium.svg ">
+        <action name="Execute">
+          <command>doas jexec -u ivan browsers chrome</command>
+        </action>
+      </item>
+      <item label="Tor Browser" icon ="/usr/local/share/icons/Papirus/48x48/apps/tor-browser.svg ">
+        <action name="Execute">
+          <command>doas jexec -u ivan browsers tor-browser</command>
+        </action>
+		</item>
+   </menu>
+
+	<menu id="submenu-net" label="Network" icon="/usr/local/share/icons/Papirus/48x48/devices/lan-segment.svg">
+	    <item label="Wireshark" icon="/usr/local/share/icons/Papirus/48x48/apps/wireshark.svg">
+        <action name="Execute">
+          <command>wireshark</command>
+        </action>
+      </item>
+      <item label="NetSurf" icon ="/usr/local/share/icons/Papirus/48x48/apps/netsurf.svg">
+        <action name="Execute">
+          <command>netsurf-gtk duckduckgo.com</command>
+        </action>
+		</item>
+      <item label="WPA Cli" icon ="/usr/local/share/icons/Papirus/48x48/apps/securecrt.svg">
+        <action name="Execute">
+				<command>st -f "monospace:size=11" -e zsh -c 'wpa_cli; exec zsh '</command>
+        </action>
+      </item>
+   </menu>
+
+   <menu id="submenu-office" label="Editors" icon="/usr/local/share/icons/Papirus/48x48/apps/wxHexEditor.svg">
+		<item label="Leafpad" icon ="/home/ivan/Pictures/icons/LeafpadLogo.svg ">
+        <action name="Execute">
+          <command>leafpad</command>
+        </action>
+       </item>
+      <item label="Libreoffice" icon ="/usr/local/share/icons/Papirus/48x48/apps/libreoffice.svg ">
+        <action name="Execute">
+          <command>libreoffice</command>
+        </action>
+		</item>
+      <item label="Geany" icon ="/usr/local/share/icons/Papirus/48x48/apps/geany.svg">
+        <action name="Execute">
+          <command>geany</command>
+        </action>
+		</item>
+      <item label="VS Code" icon ="/usr/local/share/icons/Papirus/48x48/apps/vscode.svg">
+        <action name="Execute">
+          <command>vscode</command>
+        </action>
+      </item>
+   </menu>
+
+   <menu id="submenu-read" label="Library" icon="/usr/local/share/icons/Papirus/48x48/apps/org.gnome.gitlab.ilhooq.Bookup.svg">
+      <item label="Calibre" icon ="/usr/local/share/icons/Papirus/48x48/apps/calibre.svg ">
+        <action name="Execute">
+          <command>calibre</command>
+        </action>
+      </item>
+      <item label="Zathura" icon ="/usr/local/share/icons/Papirus/48x48/apps/zathura.svg ">
+        <action name="Execute">
+          <command>zathura</command>
+        </action>
+       </item>
+	   <item label="RSS Guard" icon="/usr/local/share/icons/Papirus/48x48/apps/rssguard.svg">
+        <action name="Execute">
+          <command>rssguard</command>
+        </action>
+       </item>
+	</menu>
+
+   <menu id="submenu-graphics" label="Graphics" icon="/usr/local/share/icons/Papirus/48x48/categories/gnome-paint.svg">
+      <item label="The GIMP" icon ="/usr/local/share/icons/Papirus/48x48/apps/gimp.svg ">
+        <action name="Execute">
+          <command>gimp</command>
+        </action>
+		</item>
+		<item label="Photoshop" icon ="/usr/local/share/icons/Papirus/48x48/apps/photoshop.svg">
+        <action name="Execute">
+		  <command>./Scripts/ps.sh</command>
+        </action>
+      </item>
+       <item label="nomacs" icon ="/usr/local/share/icons/Papirus/48x48/apps/nomacs.svg">
+        <action name="Execute">
+          <command>nomacs</command>
+        </action>
+       </item>
+   </menu>
+   <menu id="submenu-media" label="Audio/Video" icon="/usr/local/share/icons/Papirus/48x48/categories/video-player.svg">
+      <item label="mpv" icon ="/usr/local/share/icons/Papirus/48x48/apps/mpv.svg ">
+        <action name="Execute">
+          <command>st -f "monospace:size=11" -e zsh -c 'mpv; exec zsh'</command>
+        </action>
+      </item>
+      <item label="Audacity" icon ="/usr/local/share/icons/Papirus/48x48/apps/audacity.svg ">
+        <action name="Execute">
+          <command>audacity</command>
+        </action>
+      </item>
+      <item label="QWinFF" icon ="/usr/local/share/icons/Papirus/48x48/apps/ffmpeg.svg ">
+        <action name="Execute">
+          <command>qwinff</command>
+        </action>
+		</item>
+      <item label="Shotcut" icon ="/usr/local/share/icons/Papirus/48x48/apps/shotcut.svg ">
+        <action name="Execute">
+          <command>shotcut</command>
+        </action>
+       </item>
+	  <menu id="submenu-rec" label ="ffmpeg - Rec" icon ="/usr/local/share/icons/Papirus/48x48/apps/kazam.svg ">
+      <item label="30 fps">
+        <action name="Execute">
+				<command>st -f "monospace:size=11" -e /home/ivan/Scripts/rec.sh</command>
+        </action>
+		</item>
+      <item label="60 fps">
+        <action name="Execute">
+				<command>st -f "monospace:size=11" -e /home/ivan/Scripts/rec_60fps.sh</command>
+        </action>
+       </item>
+    </menu>
+   </menu>
+   <menu id="submenu-social" label="Share" icon="/usr/local/share/icons/Papirus/48x48/categories/gnome-user-share.svg">
+       <item label="Telegram" icon ="/usr/local/share/icons/Papirus/48x48/apps/telegram.svg ">
+        <action name="Execute">
+          <command>Telegram</command>
+        </action>
+       </item>
+       <item label="Hexchat" icon ="/usr/local/share/icons/Papirus/48x48/apps/hexchat.svg ">
+        <action name="Execute">
+          <command>hexchat</command>
+        </action>
+      </item>
+      <item label="Nicotine+" icon ="/usr/local/share/icons/Papirus/48x48/apps/nicotine-plus.svg ">
+        <action name="Execute">
+          <command>nicotine</command>
+        </action>
+      </item>
+       <item label="qBittorrent" icon ="/usr/local/share/icons/Papirus/48x48/apps/qbittorrent.svg ">
+        <action name="Execute">
+          <command>qbittorrent</command>
+        </action>
+      </item>
+       <item label="Transmission Remote" icon ="/usr/local/share/icons/Papirus/48x48/apps/transgui.svg ">
+        <action name="Execute">
+          <command>transgui</command>
+        </action>
+      </item>
+    </menu>
+
+   <menu id="submenu-data" label="Database" icon="/usr/local/share/icons/Papirus/48x48/apps/sqliteman.svg">
+      <menu id="submenu-podman" label="pgAdmin 4" icon="/usr/local/share/icons/Papirus/48x48/apps/pgadmin4.svg">
+       <item label="Start Podman">
+        <action name="Execute">
+		  <command>/home/ivan/Scripts/podman_start.sh</command>
+        </action>
+       </item>
+       <item label="Stop Podman">
+        <action name="Execute">
+		  <command>/home/ivan/Scripts/podman_stop.sh</command>
+        </action>
+		</item>
+       <item label="Interface" icon>
+        <action name="Execute">
+		  <command>doas jexec -u ivan browsers chrome http://10.0.0.2:8080</command>
+        </action>
+		</item>
+	  </menu>
+
+       <item label="DBeaver" icon ="/usr/local/share/icons/Papirus/48x48/apps/dbeaver.svg ">
+        <action name="Execute">
+          <command>dbeaver</command>
+        </action>
+		</item>
+       <item label="brModelo" icon ="/usr/local/share/icons/Papirus/48x48/apps/java.svg ">
+        <action name="Execute">
+		  <command>/home/ivan/Scripts/brmodelo.sh</command>
+        </action>
+       </item>
+
+      <menu id="submenu-postgre" label="postgresql" icon="/usr/local/share/icons/Papirus/48x48/apps/sqldeveloper.svg">
+       <item label="Start Service">
+        <action name="Execute">
+		  <command>/home/ivan/Scripts/postgresql_start.sh</command>
+        </action>
+       </item>
+       <item label="Stop Service">
+        <action name="Execute">
+		  <command>/home/ivan/Scripts/postgresql_stop.sh</command>
+        </action>
+       </item>
+	  </menu>
+    </menu>
+
+    <menu id="submenu-games" label="Games" icon="/usr/local/share/icons/Papirus/48x48/devices/wiimotedev.svg">
+       <item label="Snes9x" icon ="/usr/local/share/icons/Papirus/48x48/apps/snes9x.svg">
+        <action name="Execute">
+          <command>snes9x-gtk</command>
+        </action>
+       </item>
+	   <item label="mGBA" icon ="/usr/local/share/icons/Papirus/48x48/apps/mgba.svg">
+        <action name="Execute">
+		   <command>mgba-qt</command>
+        </action>
+       </item>
+	   <item label="Duckstation" icon ="/usr/local/share/icons/Papirus/48x48/apps/duckstation-qt.svg">
+        <action name="Execute">
+		   <command>fbsd-duckstation-qt</command>
+        </action>
+		</item>
+	   <item label="pcsx2" icon ="/usr/local/share/icons/Papirus/48x48/apps/pcsx2.svg">
+        <action name="Execute">
+		   <command>pcsx2-qt</command>
+        </action>
+       </item>
+       <item label="DOSBox-staging" icon="/usr/local/share/icons/Papirus/48x48/apps/dosbox-staging.svg">
+        <action name="Execute">
+          <command>dosbox-staging</command>
+        </action>
+        </item>
+         <menu id="submenu-vn" label="Wine" icon="/usr/local/share/icons/Papirus/48x48/apps/wine.svg">
+       <item label="SnowPE" icon="/home/ivan/Documents/Games/SnowPE/SNOWPE.ICO">
+        <action name="Execute">
+		  <command>/home/ivan/Scripts/snowpe.sh</command>
+        </action>
+       </item>
+       <item label="Kanon" icon="/home/ivan/Documents/Games/Kanon/Kanon.ico">
+        <action name="Execute">
+		  <command>/home/ivan/Scripts/kanon.sh</command>
+        </action>
+       </item>
+       <item label="Air" icon="/home/ivan/Documents/Games/Air/AIR.ICO">
+        <action name="Execute">
+		  <command>/home/ivan/Scripts/air.sh</command>
+        </action>
+       </item>
+       <item label="Clannad" icon="/home/ivan/Documents/Games/CLANNAD/CLANNAD_FV.ICO">
+		  <action name="Execute">
+		  <command>/home/ivan/Scripts/clannad.sh</command>
+        </action>
+		</item>
+       <item label="ef" icon="/home/ivan/Documents/Games/ef/ef.png">
+        <action name="Execute">
+		  <command>/home/ivan/Scripts/ef.sh</command>
+        </action>
+       </item>
+	   <item label="Akai Ito" icon="/home/ivan/Pictures/icons/nozomi.png">
+		  <action name="Execute">
+		  <command>/home/ivan/Scripts/akaito.sh</command>
+        </action>
+       </item>
+       <item label="Fate Hollow Ataraxia" icon="/home/ivan/Documents/Games/Fate_Hollow_Ataraxia/fate.ico">
+        <action name="Execute">
+		  <command>/home/ivan/Scripts/fate.sh</command>
+        </action>
+	</item>
+	<item label="Little Witch Romanesque" icon="/home/ivan/Pictures/icons/lwr.ico">
+        <action name="Execute">
+		  <command>/home/ivan/Scripts/lwr.sh</command>
+        </action>
+    </item>
+	<item label="Tears to Tiara" icon="/home/ivan/Pictures/icons/TtT.png">
+        <action name="Execute">
+		  <command>/home/ivan/Scripts/TtT.sh</command>
+        </action>
+    </item>
+	<item label="Yu-Gi-Oh! Joey The Passion" icon="/home/ivan/Documents/Games/YuGiOh/joey.png">
+      <action name="Execute">
+		  <command>/home/ivan/Scripts/yugi.sh</command>
+      </action>
+	  </item>
+	  <item label="Victoria 2" icon="/home/ivan/Documents/Games/Vic2/Victoria2.ico">
+       <action name="Execute">
+		  <command>/home/ivan/Scripts/vic2.sh</command>
+       </action>
+	  </item>
+	   <item label="Colin McRae Rally 2" icon="/home/ivan/Pictures/icons/cmr2.png">
+       <action name="Execute">
+		  <command>/home/ivan/Scripts/cmr2.sh</command>
+       </action>
+	  </item>
+	</menu>
+        <menu id="submenu-java" label="Java" icon="/usr/local/share/icons/Papirus/48x48/apps/java.svg">
+	  <item label="Minecraft" icon="/usr/local/share/icons/Papirus/48x48/apps/org.prismlauncher.PrismLauncher.svg">
+       <action name="Execute">
+			   <command>/home/ivan/Scripts/prismlauncher.sh</command>
+       </action>
+	  </item>
+	   <item label="Micropolis" icon="/home/ivan/Pictures/icons/sc.png">
+		 <action name ="Execute">
+				 <command>/home/ivan/Scripts/micropolis.sh</command>
+		 </action>
+       </item>
+	  </menu>
+    </menu>
+
+	<menu id="submenu-bhyve" label="bhyve" icon="/home/ivan/Pictures/icons/bhyve.png">
+      <menu id="submenu-vmbhyve" label="vm-bhyve" icon="/home/ivan/Pictures/icons/bhyve.png">
+       <item label="Start Service">
+        <action name="Execute">
+		  <command>/home/ivan/Scripts/start_vm.sh</command>
+        </action>
+       </item>
+       <item label="Stop Service">
+        <action name="Execute">
+		  <command>/home/ivan/Scripts/stop_vm.sh</command>
+        </action>
+       </item>
+	  </menu>
+	  <menu id="submenu-devuan" label="Devuan" icon='/usr/local/share/icons/Papirus/48x48/apps/distributor-logo-devuan.svg'>
+	  <item label="Start Devuan">
+        <action name="Execute">
+		  <command>/home/ivan/Scripts/start_devuan.sh</command>
+       </action>
+      </item>
+      <item label="Stop Devuan">
+        <action name="Execute">
+		  <command>/home/ivan/Scripts/stop_devuan.sh</command>
+        </action>
+		</item>
+		</menu>
+      <item label="TigerVNC" icon='/usr/local/share/icons/Papirus/48x48/apps/tigervnc.svg'>
+        <action name="Execute">
+          <command>vncviewer 127.0.0.1:5900</command>
+        </action>
+     </item>
+   </menu>
+
+    <menu id="submenu-otros" label="Misc" icon="/usr/local/share/icons/Papirus/48x48/categories/xfce-ui.svg">
+       <item label="Anki" icon ="/usr/local/share/icons/Papirus/48x48/apps/anki.svg">
+        <action name="Execute">
+          <command>anki</command>
+         </action>
+        </item>
+       <item label="XArchiver" icon ="/usr/local/share/icons/Papirus/48x48/apps/xarchiver.svg">
+        <action name="Execute">
+          <command>xarchiver</command>
+         </action>
+        </item>
+       <item label="Calculator" icon ="/usr/local/share/icons/Papirus/48x48/apps/gnome-calculator.svg">
+        <action name="Execute">
+          <command>lumina-calculator</command>
+        </action>
+        </item>
+       <item label="Color Select" icon ="/usr/local/share/icons/Papirus/48x48/apps/colorgrab.svg">
+        <action name="Execute">
+          <command>gcolor3</command>
+        </action>
+		</item>
+     <item label="BatteryCat" icon="/usr/local/share/icons/Papirus/48x48/apps/xfce4-battery-plugin.svg">
+       <action name="Execute">
+		 <command>batterycat</command>
+       </action>
+	 </item>
+	</menu>
+
+      <menu id="submenu-config" label="Settings" icon="/usr/local/share/icons/Numix/48/apps/jockey.svg">
+	  <item label="ARandR" icon ="/usr/local/share/icons/Papirus/48x48/devices/computer.svg">
+        <action name="Execute">
+          <command>arandr</command>
+        </action>
+      </item>
+      <item label="Tint2 Settings" icon ="/usr/local/share/icons/Papirus/48x48/apps/tint2.svg ">
+        <action name="Execute">
+          <command>tint2conf</command>
+        </action>
+      </item>
+      <item label="Openbox config" icon ="/usr/local/share/icons/Papirus/48x48/apps/openbox.svg ">
+        <action name="Execute">
+          <command>obconf</command>
+        </action>
+      </item>
+      <item label="Fossmixer" icon ="/usr/local/share/icons/Papirus/48x48/apps/pavucontrol.svg ">
+        <action name="Execute">
+          <command>fossmixer</command>
+        </action>
+     </item>
+     <item label="Time Admin" icon="/usr/local/share/icons/Papirus/48x48/apps/time-admin.svg">
+       <action name="Execute">
+		 <command>lxqt-admin-time</command>
+       </action>
+     </item>
+			 <item label="User Admin" icon="/usr/local/share/icons/Papirus/48x48/apps/user-admin.svg">
+       <action name="Execute">
+		 <command>lxqt-admin-user</command>
+       </action>
+     </item>
+	</menu> 
+
+	<menu id="submenu-appearance" label="Appearance" icon="/usr/local/share/icons/Papirus/48x48/apps/org.xfce.settings.appearance.svg">
+       <item label="lxapperance" icon ="/usr/local/share/icons/Papirus/48x48/apps/style.svg">
+        <action name="Execute">
+          <command>lxappearance</command>
+        </action>
+       </item>
+       <item label="qt5ct" icon ="/usr/local/share/icons/Papirus/48x48/apps/qt5ct.svg">
+        <action name="Execute">
+          <command>qt5ct</command>
+        </action>
+       </item>
+       <item label="qt6ct" icon ="/usr/local/share/icons/Papirus/48x48/apps/qt6ct.svg">
+        <action name="Execute">
+          <command>qt6ct</command>
+        </action>
+       </item>
+    </menu>
+	<menu id="submenu-sys" label="System" icon="/usr/local/share/icons/Papirus/48x48/apps/distributor-logo-freebsd.svg">
+		<item label="/etc/rc.conf">
+        <action name="Execute">
+		  <command>st -f "monospace:size=11" -e doas nvim /etc/rc.conf</command>
+        </action>
+        </item>
+		<item label="/etc/sysctl.conf">
+        <action name="Execute">
+		  <command>st -f "monospace:size=11" -e doas nvim /etc/sysctl.conf</command>
+         </action>
+        </item>
+		<item label="/etc/jail.conf">
+        <action name="Execute">
+		  <command>st -f "monospace:size=11" -e doas nvim /etc/jail.conf</command>
+         </action>
+        </item>
+		<item label="/etc/wpa__supplicant.conf">
+        <action name="Execute">
+		  <command>st -f "monospace:size=11" -e doas nvim /usr/local/etc/wifibox/wpa_supplicant/wpa_supplicant.conf</command>
+        </action>
+		</item>
+		<item label="/etc/devfs.rules">
+        <action name="Execute">
+		  <command>st -f "monospace:size=11" -e doas nvim /etc/devfs.rules</command>
+        </action>
+		</item>
+		<item label="/etc/devfs.conf">
+        <action name="Execute">
+		  <command>st -f "monospace:size=11" -e doas nvim /etc/devfs.conf</command>
+        </action>
+		</item>
+		<item label="/etc/fstab">
+        <action name="Execute">
+		  <command>st -f "monospace:size=11" -e doas nvim /etc/fstab</command>
+        </action>
+		</item>
+		<item label="/boot/loader.conf">
+        <action name="Execute">
+				<command>st -f "monospace:size=11" -e doas nvim /boot/loader.conf</command>
+        </action>
+        </item>
+		<item label="/usr/local/etc/doas.conf">
+        <action name="Execute">
+				<command>st -f "monospace:size=11" -e doas nvim /usr/local/etc/doas.conf</command>
+        </action>
+      </item>
+	</menu>
+
+	<separator />
+	<item label="xkill" icon="/usr/local/share/icons/Papirus/48x48/apps/xorg.svg">
+		<action name="Execute">
+          <command>xkill</command>
+        </action>
+    </item>
+	<item label="slock" icon="/usr/local/share/icons/Papirus/48x48/status/encrypted.svg">
+		<action name="Execute">
+          <command>slock</command>
+        </action>
+    </item>
+	<item label="Reconfigure" icon="/usr/local/share/icons/Papirus/48x48/apps/computersettings.svg">
+      <action name="Reconfigure" />
+    </item>
+  </menu>
+</openbox_menu>
