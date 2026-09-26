@@ -37,6 +37,10 @@
 "/home/ivan/Scripts/scrot.sh"
     Mod4 + Print
 
+# print - clipboard
+"/home/ivan/Scripts/scrot_xclip.sh"
+    Mod4 + Shift + Print
+
 # Geany
 "geany"
     Mod4 + g
@@ -56,10 +60,6 @@
 # Lock
 "slock"
     Mod4 + l
-
-# wifi
-"wifimgr"
-    Mod4 + n
 
 # Suspend
 "~/Scripts/lock.sh"
