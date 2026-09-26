@@ -1,0 +1,9 @@
+set number                  " Enable line numbers
+set relativenumber          " Enable relative line numbers
+set noerrorbells            " Turn off error bells
+set tabstop=4               " Number of spaces tabs count for
+set clipboard=unnamed,unnamedplus
+highlight Normal guibg=none
+highlight NonText guibg=none
+highlight Normal ctermbg=none
+highlight NonText ctermbg=none
