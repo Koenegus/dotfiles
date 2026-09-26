@@ -69,7 +69,7 @@
 "~/Scripts/tint2.sh"
    Mod4 + Shift + t
 
-# Restart Tint2
+# ???
 "~/Scripts/kill2.sh"
    Mod4 + Shift + g
 
