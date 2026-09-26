@@ -1,0 +1,19 @@
+[global]
+origin = top-right
+transparency = 15
+frame_color = "#875a48"
+separator_color= frame
+highlight = "#875a48"
+
+[urgency_low]
+background = "#39261e"
+foreground = "#ffd5d5"
+
+[urgency_normal]
+background = "#39261e"
+foreground = "#ffd5d5"
+
+[urgency_critical]
+background = "#39261e"
+foreground = "#ffd5d5"
+frame_color = "#fab387"
