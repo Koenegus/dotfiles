@@ -45,11 +45,11 @@
     Mod4 + g
 
 # Resize screen
-"~/Scripts/screen.sh"
+"/home/ivan/Scripts/screen.sh"
     Mod4 + Shift + s
 
 # Pause
-"~/Scripts/pause.sh -a"
+"/home/ivan/Scripts/pause.sh -a"
     Mod4 + p
 
 # Pause MPV
@@ -61,15 +61,15 @@
     Mod4 + l
 
 # Suspend
-"~/Scripts/lock.sh"
+"/home/ivan/Scripts/lock.sh"
     Mod4 + Shift + l
 
 # Restart Tint2
-"~/Scripts/tint2.sh"
+"/home/ivan/Scripts/tint2.sh"
    Mod4 + Shift + t
 
 # ???
-"~/Scripts/kill2.sh"
+"/home/ivan/Scripts/kill2.sh"
    Mod4 + Shift + g
 
 # kill
