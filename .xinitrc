@@ -4,7 +4,7 @@ exec dbus-run-session sh -c '
 
 export GDK_BACKEND=x11
 export QT_QPA_PLATFORMTHEME="qt5ct"
-export SAL_USE_VCLPLUGIN=gen
+export SAL_USE_VCLPLUGIN=gtk
 
 mixer vol=0.50:0.30
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Accel Speed" 0.20
