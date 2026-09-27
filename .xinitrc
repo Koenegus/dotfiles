@@ -2,6 +2,7 @@
 
 exec dbus-run-session sh -c '
 
+export XCURSOR_SIZE=32
 export GDK_BACKEND=x11
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export SAL_USE_VCLPLUGIN=gtk
