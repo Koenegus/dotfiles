@@ -4,7 +4,7 @@ exec dbus-run-session sh -c '
 
 export GDK_BACKEND=x11
 export QT_QPA_PLATFORMTHEME="qt5ct"
-export SAL_USE_VCLPLUGIN=gtk3
+export SAL_USE_VCLPLUGIN=gen
 
 mixer vol=0.50:0.30
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Accel Speed" 0.20
@@ -28,6 +28,7 @@ xidle -program /usr/local/bin/slock -timeout 360 &
 sleep 1
 tmux new-session -d -s chat_session nchat &
 mpg123 /home/ivan/Music/Sounds/macOS_X.mp3 > /dev/dsp 2> /dev/null & 
+xrdb -merge ~/.Xresources
 
 exec openbox
 '
