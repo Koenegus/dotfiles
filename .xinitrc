@@ -28,7 +28,6 @@ xidle -program /usr/local/bin/slock -timeout 360 &
 sleep 1
 tmux new-session -d -s chat_session nchat &
 mpg123 /home/ivan/Music/Sounds/macOS_X.mp3 > /dev/dsp 2> /dev/null & 
-xrdb -merge ~/.Xresources
 
 exec openbox
 '
