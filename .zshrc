@@ -136,3 +136,9 @@ dotsync() {
     dotfiles commit -m "Update: $*"
     dotfiles push
 }
+
+dotremove() {
+    dotfiles rm --cached "$@"
+    dotfiles commit -m "Remove: $*"
+    dotfiles push
+}
