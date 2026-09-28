@@ -239,6 +239,11 @@
 		   <command>pcsx2-qt</command>
         </action>
        </item>
+	   <item label="Dolphin" icon ="/usr/local/share/icons/Papirus/48x48/apps/dolphin-emu.svg">
+        <action name="Execute">
+		   <command>dolphin-emu</command>
+        </action>
+       </item>
        <item label="DOSBox-staging" icon="/usr/local/share/icons/Papirus/48x48/apps/dosbox-staging.svg">
         <action name="Execute">
           <command>dosbox-staging</command>
