@@ -4,7 +4,7 @@
   <menu id="root-menu" label="Openbox Root Menu">
      <item label="Terminal" icon="/usr/local/share/icons/Papirus/48x48/apps/terminal.svg">
       <action name="Execute">
-        <command>st -f monospace:size=10 tmux</command>
+          <command>/home/ivan/Scripts/term.sh</command>
       </action>
     </item>
 
