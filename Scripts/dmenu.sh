@@ -1,13 +1,13 @@
 #!/bin/sh
 
-main=$(printf "Search\nTerminal\nFile_Manager\nMail\ni2pd\nUnmount\nScreenshot\nxkill\nslock\nRestart_Wifibox\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn monospace:size=9 -sb red)
+main=$(printf "Search\nTerminal\nFile_Manager\nMail\nCaffeine\ni2pd\nUnmount\nScreenshot\nxkill\nslock\nRestart_Wifibox\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn monospace:size=9 -sb red)
 
 case "$main" in
 Search)
     dmenu_run -b -fn monospace:size=10 -sb red &
 	;;
 Terminal)
-    st -f monospace:size=10 -e tmux &
+    /home/ivan/Scripts/term.sh &
 	;;
 File_Manager)
     thunar &
@@ -15,6 +15,9 @@ File_Manager)
 Mail)
     claws-mail &
 	;;
+Caffeine)
+    caffeine &
+    ;;
 i2pd)
    app=$(printf "Start_Service\nStop_Service\n" | dmenu -b -fn monospace:size=10 -sb red)
    case "$app" in
