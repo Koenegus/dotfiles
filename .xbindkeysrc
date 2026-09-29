@@ -1,6 +1,6 @@
 #xev!
 # Terminal
-"st -f 'monospace:size=10' -e tmux"
+"/home/ivan/Scripts/term.sh"
     Mod4 + Return
 
 # dmenu
@@ -20,7 +20,6 @@
     Mod4 + f
 
 # LibreOffice
-#"SAL_USE_VCLPLUGIN=gen libreoffice"
 "libreoffice"
     Mod4 + o
 
