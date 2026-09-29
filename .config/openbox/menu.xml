@@ -408,16 +408,6 @@
           <command>fossmixer</command>
         </action>
      </item>
-     <item label="Time Admin" icon="/usr/local/share/icons/Papirus/48x48/apps/time-admin.svg">
-       <action name="Execute">
-		 <command>lxqt-admin-time</command>
-       </action>
-     </item>
-			 <item label="User Admin" icon="/usr/local/share/icons/Papirus/48x48/apps/user-admin.svg">
-       <action name="Execute">
-		 <command>lxqt-admin-user</command>
-       </action>
-     </item>
 	</menu> 
 
 	<menu id="submenu-appearance" label="Appearance" icon="/usr/local/share/icons/Papirus/48x48/apps/org.xfce.settings.appearance.svg">
