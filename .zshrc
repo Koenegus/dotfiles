@@ -78,6 +78,7 @@ alias proton='/usr/local/wine-proton/bin-wow64/wine'
 alias fm='nnn -e'
 alias tempo='doas ntpdate pool.ntp.org'
 alias dotfiles='/usr/local/bin/git --git-dir=/home/ivan/.dotfiles --work-tree=/home/ivan'
+alias bsdinfo='/home/ivan/Scripts/system_info.sh'
 
 #######
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
