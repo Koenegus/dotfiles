@@ -17,6 +17,7 @@ ffmpeg \
     -framerate 60 \
     -video_size ${W}x${H} \
     -i :0.0+${X},${Y} \
+    -f oss -i /dev/vdsp.loopback \
     -c:v libx264 \
     -pix_fmt yuv420p \
     -preset ultrafast \
