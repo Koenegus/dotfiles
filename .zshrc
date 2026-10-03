@@ -64,7 +64,7 @@ alias ls="eza --icons --group-directories-first"
 alias cls="clear"
 alias bat="ff | grep "Battery""
 alias poweroff='/home/ivan/Scripts/poweroff.sh'
-alias xterm='xterm -bg black -fg white -fa "Monospace" -fs 10 tmux'
+alias xterm='xterm -bg black -fg white -fa "JetBrainsMono Nerd Font" -fs 10 tmux'
 alias pgadmin4='chrome http://10.0.1.2:5050'
 alias brmodelo='/home/ivan/Scripts/brmodelo.sh'
 alias captura='nomacs /home/ivan/Pictures/Screenshots/2026 &'
@@ -78,7 +78,8 @@ alias proton='/usr/local/wine-proton/bin-wow64/wine'
 alias fm='nnn -e'
 alias tempo='doas ntpdate pool.ntp.org'
 alias dotfiles='/usr/local/bin/git --git-dir=/home/ivan/.dotfiles --work-tree=/home/ivan'
-alias bsdinfo='/home/ivan/Scripts/system_info.sh'
+alias fbsdinfo='/home/ivan/Scripts/system_info.sh'
+alias st='st -f 'JetBrainsMonoNerdFont:size=10' -e tmux'
 
 #######
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
