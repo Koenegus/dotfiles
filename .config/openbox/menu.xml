@@ -126,24 +126,24 @@
         </action>
        </item>
 	  <menu id="submenu-rec" label ="ffmpeg - Rec" icon ="/usr/local/share/icons/Papirus/48x48/apps/kazam.svg ">
-      <item label="30 fps">
+      <item label="Video">
         <action name="Execute">
 				<command>st -f "monospace:size=11" -e /home/ivan/Scripts/rec.sh</command>
         </action>
      </item>
-      <item label="30 fps 🕪">
+      <item label="Video + Mic">
+        <action name="Execute">
+				<command>st -f "monospace:size=11" -e /home/ivan/Scripts/rec_mic.sh</command>
+        </action>
+		</item>
+      <item label="Video + Loopback">
         <action name="Execute">
 				<command>st -f "monospace:size=11" -e /home/ivan/Scripts/rec_audio.sh</command>
         </action>
-		</item>
-      <item label="60 fps">
-        <action name="Execute">
-				<command>st -f "monospace:size=11" -e /home/ivan/Scripts/rec_60fps.sh</command>
-        </action>
       </item>
-      <item label="60 fps 🕪">
+      <item label="Video + Loopback + Mic">
         <action name="Execute">
-				<command>st -f "monospace:size=11" -e /home/ivan/Scripts/rec_60_audio.sh</command>
+				<command>st -f "monospace:size=11" -e /home/ivan/Scripts/rec_audio_y_mic.sh</command>
         </action>
        </item>
     </menu>
