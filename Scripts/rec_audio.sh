@@ -18,9 +18,6 @@ ffmpeg \
     -video_size ${W}x${H} \
     -i :0.0+${X},${Y} \
     -f oss -i /dev/vdsp.loopback \
-    -f oss -i /dev/dsp \
-    -filter_complex "[1:a][2:a]amix=inputs=2:duration=longest:normalize=0[a]" \
-    -map 0:v -map "[a]" \
     -c:v libx264 \
     -pix_fmt yuv420p \
     -preset ultrafast \
