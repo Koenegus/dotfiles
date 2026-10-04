@@ -1,6 +1,6 @@
 #!/bin/sh
 
-main=$(printf "Search\nTerminal\nFile_Manager\nMail\nCaffeine\ni2pd\nVOSS\nUnmount\nScreenshot\nxkill\nslock\nRestart_Wifibox\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn monospace:size=9 -sb red)
+main=$(printf "Search\nTerminal\nFile_Manager\nMail\nCaffeine\ni2pd\nVOSS\nwebcamd\nUnmount\nScreenshot\nxkill\nslock\nRestart_Wifibox\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn monospace:size=9 -sb red)
 
 case "$main" in
 Search)
@@ -19,7 +19,7 @@ Caffeine)
     caffeine &
     ;;
 i2pd)
-   app=$(printf "Start_Service\nStop_Service\n" | dmenu -b -fn monospace:size=10 -sb red)
+   app=$(printf "Start_Service\nStop_Service\n" | dmenu -b -fn monospace:size=9 -sb red)
    case "$app" in
    Start_Service)
 		/home/ivan/Scripts/i2pd_start.sh &
@@ -29,7 +29,7 @@ i2pd)
    esac
    ;;
 VOSS)
-   app=$(printf "Start_Service\nStop_Service\n" | dmenu -b -fn monospace:size=10 -sb red)
+   app=$(printf "Start_Service\nStop_Service\n" | dmenu -b -fn monospace:size=9 -sb red)
    case "$app" in
    Start_Service)
 		/home/ivan/Scripts/voss_start.sh &
@@ -38,6 +38,20 @@ VOSS)
 		/home/ivan/Scripts/voss_stop.sh &
    esac
    ;;
+webcamd)
+   app=$(printf "Start_Service\nStop_Service\npwcview\n" | dmenu -b -fn monospace:size=9 -sb red)
+   case "$app" in
+   Start_Service)
+		/home/ivan/Scripts/cam_start.sh &
+		;;
+   Stop_Service)
+		/home/ivan/Scripts/cam_stop.sh &
+        ;;
+   pwcview)
+       pwcview &
+   esac
+   ;;
+
 Unmount)
     /home/ivan/Scripts/umont.sh &
     ;;
