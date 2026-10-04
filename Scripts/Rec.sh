@@ -20,7 +20,7 @@ echo "Options:
 1 - Video
 2 - Video + Mic
 3 - Video + Loopback
-4 - Video + Loopback + Mix
+4 - Video + Loopback + Mic
 "
 
 read -p "Choose: " op
