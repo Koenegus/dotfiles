@@ -1,6 +1,6 @@
 #!/bin/sh
 
-main=$(printf "Search\nTerminal\nFile_Manager\nMail\nCaffeine\ni2pd\nUnmount\nScreenshot\nxkill\nslock\nRestart_Wifibox\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn monospace:size=9 -sb red)
+main=$(printf "Search\nTerminal\nFile_Manager\nMail\nCaffeine\ni2pd\nVOSS\nUnmount\nScreenshot\nxkill\nslock\nRestart_Wifibox\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn monospace:size=9 -sb red)
 
 case "$main" in
 Search)
@@ -26,6 +26,16 @@ i2pd)
 		;;
    Stop_Service)
 		/home/ivan/Scripts/i2pd_stop.sh &
+   esac
+   ;;
+VOSS)
+   app=$(printf "Start_Service\nStop_Service\n" | dmenu -b -fn monospace:size=10 -sb red)
+   case "$app" in
+   Start_Service)
+		/home/ivan/Scripts/voss_start.sh &
+		;;
+   Stop_Service)
+		/home/ivan/Scripts/voss_stop.sh &
    esac
    ;;
 Unmount)
