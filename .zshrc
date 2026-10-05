@@ -90,9 +90,6 @@ export EDITOR=nvim
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
 
-#Java options
-export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true -Dsun.java1d.xrender=true"
-
 source /usr/local/share/zsh-autosuggestions/zsh-autosuggestions.zsh
 source /usr/local/share/zsh-syntax-highlighting/zsh-syntax-highlighting.zsh
 
