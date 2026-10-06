@@ -7,7 +7,7 @@
 #                                      (use after changing patch/Makefile.local)
 
 PORTSDIR=/usr/ports
-PORTS="x11-fm/thunar x11-wm/openbox x11/sterm emulators/mgba"
+PORTS="x11-fm/thunar x11-wm/openbox x11/sterm emulators/mgba x11-servers/xlibre-server"
 LOG=/var/log/update-ports.log
 
 FORCE=0
