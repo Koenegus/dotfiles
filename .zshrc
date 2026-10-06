@@ -86,6 +86,9 @@ export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
 setopt INTERACTIVE_COMMENTS
 export EDITOR=nvim
 
+#JAVA
+export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true -Dsun.java1d.xrender=true"
+
 # Enforce UTF-8 locale in environment variables
 export LC_ALL="en_US.UTF-8"
 export LANG="en_US.UTF-8"
