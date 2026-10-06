@@ -10,7 +10,7 @@ rec() {
         -i :0.0+${X},${Y} \
         -c:v libx264 \
         -pix_fmt yuv420p \
-        -preset fast \
+        -preset ultrafast \
         -crf 25 \
         -movflags +faststart \
         "$@" 
