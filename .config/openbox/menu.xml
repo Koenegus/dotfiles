@@ -370,9 +370,9 @@
           <command>gcolor3</command>
         </action>
 		</item>
-     <item label="BatteryCat" icon="/usr/local/share/icons/Papirus/48x48/apps/xfce4-battery-plugin.svg">
-       <action name="Execute">
-		 <command>batterycat</command>
+     <item label="Battery Info" icon="/usr/local/share/icons/Papirus/48x48/apps/xfce4-battery-plugin.svg">
+         <action name="Execute">
+		<command>st -f "monospace:size=10" -e /home/ivan/Scripts/apm.sh</command>
        </action>
 	 </item>
 	</menu>
