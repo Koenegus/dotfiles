@@ -62,10 +62,10 @@ alias pkg-size='pkg info -as | sort -k 2 -h | tail -20 | column -t'
 alias fastboot-at='/usr/local/bin/fastboot'
 alias ls="eza --icons --group-directories-first"
 alias cls="clear"
-alias bat="ff | grep "Battery""
+alias bat="apm"
 alias poweroff='/home/ivan/Scripts/poweroff.sh'
 alias xterm='xterm -bg black -fg white -fa "JetBrainsMono Nerd Font" -fs 10 tmux'
-alias pgadmin4='chrome http://10.0.1.2:5050'
+alias pgadmin4='librewolf http://10.0.1.2:5050'
 alias brmodelo='/home/ivan/Scripts/brmodelo.sh'
 alias captura='nomacs /home/ivan/Pictures/Screenshots/2026 &'
 alias wine32='WINEPREFIX="/home/ivan/.wine32" wine '
@@ -80,6 +80,7 @@ alias tempo='doas ntpdate pool.ntp.org'
 alias dotfiles='/usr/local/bin/git --git-dir=/home/ivan/.dotfiles --work-tree=/home/ivan'
 alias fbsdinfo='/home/ivan/Scripts/system_info.sh'
 alias st='st -f 'JetBrainsMonoNerdFont:size=10' -e tmux'
+alias microjava='/usr/local/bin/git --git-dir=/home/ivan/.micropolis-refurbished --work-tree=/home/ivan'
 
 #######
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
@@ -143,4 +144,16 @@ dotremove() {
     dotfiles rm --cached "$@"
     dotfiles commit -m "Remove: $*"
     dotfiles push
+}
+
+microsync() {
+    microjava add "$@"
+    microjava commit -m "Update: $*"
+    microjava push
+}
+
+microremove() {
+    microjava rm --cached "$@"
+    microjava commit -m "Remove: $*"
+    microjava push
 }
