@@ -51,7 +51,7 @@
 		</item>
       <item label="WPA Cli" icon ="/usr/local/share/icons/Papirus/48x48/apps/securecrt.svg">
         <action name="Execute">
-				<command>st -f "monospace:size=11" -e zsh -c 'wpa_cli '</command>
+				<command>st -f "monospace:size=11" -e zsh -c 'wpa_cli'</command>
         </action>
       </item>
    </menu>
