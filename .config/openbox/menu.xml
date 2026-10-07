@@ -79,19 +79,6 @@
       </item>
    </menu>
 
-   <menu id="submenu-read" label="Library" icon="/usr/local/share/icons/Papirus/48x48/apps/org.gnome.gitlab.ilhooq.Bookup.svg">
-      <item label="Calibre" icon ="/usr/local/share/icons/Papirus/48x48/apps/calibre.svg ">
-        <action name="Execute">
-          <command>calibre</command>
-        </action>
-      </item>
-      <item label="Zathura" icon ="/usr/local/share/icons/Papirus/48x48/apps/zathura.svg ">
-        <action name="Execute">
-          <command>zathura</command>
-        </action>
-       </item>
-	</menu>
-
    <menu id="submenu-graphics" label="Graphics" icon="/usr/local/share/icons/Papirus/48x48/categories/gnome-paint.svg">
       <item label="The GIMP" icon ="/usr/local/share/icons/Papirus/48x48/apps/gimp.svg ">
         <action name="Execute">
@@ -107,9 +94,19 @@
         <action name="Execute">
           <command>nomacs</command>
         </action>
+      </item>
+      <item label="Zathura" icon ="/usr/local/share/icons/Papirus/48x48/apps/zathura.svg ">
+        <action name="Execute">
+          <command>zathura</command>
+        </action>
        </item>
    </menu>
-   <menu id="submenu-media" label="Audio/Video" icon="/usr/local/share/icons/Papirus/48x48/categories/video-player.svg">
+   <menu id="submenu-media" label="Multimedia" icon="/usr/local/share/icons/Papirus/48x48/categories/video-player.svg">
+      <item label="Calibre" icon ="/usr/local/share/icons/Papirus/48x48/apps/calibre.svg ">
+        <action name="Execute">
+          <command>calibre</command>
+        </action>
+      </item>
       <item label="Audacity" icon ="/usr/local/share/icons/Papirus/48x48/apps/audacity.svg ">
         <action name="Execute">
           <command>audacity</command>
