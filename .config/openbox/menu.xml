@@ -26,11 +26,6 @@
           <command>doas jexec -u ivan browsers librewolf</command>
         </action>
       </item>
-      <item label="Chromium" icon ="/usr/local/share/icons/Papirus/48x48/apps/chromium.svg ">
-        <action name="Execute">
-          <command>doas jexec -u ivan browsers chrome</command>
-        </action>
-      </item>
       <item label="Tor Browser" icon ="/usr/local/share/icons/Papirus/48x48/apps/tor-browser.svg ">
         <action name="Execute">
           <command>doas jexec -u ivan browsers tor-browser</command>
@@ -170,7 +165,7 @@
 		</item>
        <item label="Interface" icon>
         <action name="Execute">
-		  <command>doas jexec -u ivan browsers chrome http://10.0.0.2:8080</command>
+		  <command>doas jexec -u ivan browsers librewolf http://10.0.0.2:8080</command>
         </action>
 		</item>
 	  </menu>
