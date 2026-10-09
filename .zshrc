@@ -80,7 +80,9 @@ alias tempo='doas ntpdate pool.ntp.org'
 alias dotfiles='/usr/local/bin/git --git-dir=/home/ivan/.dotfiles --work-tree=/home/ivan'
 alias fbsdinfo='/home/ivan/Scripts/system_info.sh'
 alias st='st -f 'JetBrainsMonoNerdFont:size=10' -e tmux'
-alias microjava='/usr/local/bin/git --git-dir=/home/ivan/.micropolis-refurbished --work-tree=/home/ivan'
+#alias microjava='/usr/local/bin/git --git-dir=/home/ivan/.micropolis-refurbished --work-tree=/home/ivan'
+alias stress-nigga='stress-ng --vm 1 --vm-bytes 12G --vm-keep --timeout 5m'
+alias code='code-oss'
 
 #######
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
@@ -146,14 +148,6 @@ dotremove() {
     dotfiles push
 }
 
-microsync() {
-    microjava add "$@"
-    microjava commit -m "Update: $*"
-    microjava push
-}
-
-microremove() {
-    microjava rm --cached "$@"
-    microjava commit -m "Remove: $*"
-    microjava push
+py3() {
+    /usr/local/bin/python3 "$@" 2>/dev/null
 }
