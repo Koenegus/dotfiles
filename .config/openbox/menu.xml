@@ -211,7 +211,7 @@
        </item>
 	   <item label="mGBA" icon ="/usr/local/share/icons/Papirus/48x48/apps/mgba.svg">
         <action name="Execute">
-		   <command>mgba-qt</command>
+            <command>/home/ivan/Scripts/mgba.sh</command>
         </action>
        </item>
 	   <item label="Duckstation" icon ="/usr/local/share/icons/Papirus/48x48/apps/duckstation-qt.svg">
@@ -367,7 +367,7 @@
 		</item>
      <item label="Battery Info" icon="/usr/local/share/icons/Papirus/48x48/apps/xfce4-battery-plugin.svg">
          <action name="Execute">
-		<command>st -f "monospace:size=10" -e /home/ivan/Scripts/apm.sh</command>
+		<command>st -f "monospace:size=11" -e /home/ivan/Scripts/apm.sh</command>
        </action>
 	 </item>
 	</menu>
