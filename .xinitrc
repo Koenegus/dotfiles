@@ -15,7 +15,7 @@ xsetroot -cursor_name left_ptr
 setxkbmap -layout br -variant thinkpad
 xhost +local:
 
-feh --bg-fill ~/Pictures/Wallpapers/nagato1.1.jpg &
+feh --bg-fill ~/Pictures/Wallpapers/hazuki4.jpg &
 picom &
 /home/ivan/Scripts/dzen2.sh &
 tint2 &
