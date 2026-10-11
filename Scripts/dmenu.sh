@@ -1,6 +1,6 @@
 #!/bin/sh
 
-main=$(printf "Search\nTerminal\nFile_Manager\nMail\nCaffeine\ni2pd\nVOSS\nwebcamd\nUnmount\nScreenshot\nxkill\nslock\nRestart_Wifibox\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn monospace:size=9 -sb red)
+main=$(printf "Search\nTerminal\nFile_Manager\nMail\nCaffeine\ni2pd\nVOSS\ntailscale\nwebcamd\nUnmount\nPrint\nxkill\nslock\nRestart_Wifibox\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn monospace:size=9 -sb red)
 
 case "$main" in
 Search)
@@ -36,6 +36,19 @@ VOSS)
 		;;
    Stop_Service)
 		/home/ivan/Scripts/voss_stop.sh &
+   esac
+   ;;
+tailscale)
+   app=$(printf "Start_Service\nStop_Service\nmount\n" | dmenu -b -fn monospace:size=9 -sb red)
+   case "$app" in
+   Start_Service)
+		/home/ivan/Scripts/start_tails.sh &
+		;;
+   Stop_Service)
+		/home/ivan/Scripts/stop_tails.sh &
+        ;;
+   mount)
+       /home/ivan/Scripts/mount_tails.sh &
    esac
    ;;
 webcamd)
