@@ -83,6 +83,7 @@ alias st='st -f 'JetBrainsMonoNerdFont:size=10' -e tmux'
 #alias microjava='/usr/local/bin/git --git-dir=/home/ivan/.micropolis-refurbished --work-tree=/home/ivan'
 alias stress-nigga='stress-ng --vm 1 --vm-bytes 12G --vm-keep --timeout 5m'
 alias code='code-oss'
+alias twitter='surf 'x.com''
 
 #######
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
