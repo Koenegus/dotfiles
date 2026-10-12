@@ -84,6 +84,10 @@ alias st='st -f 'JetBrainsMonoNerdFont:size=10' -e tmux'
 alias stress-nigga='stress-ng --vm 1 --vm-bytes 12G --vm-keep --timeout 5m'
 alias code='code-oss'
 alias twitter='surf 'x.com''
+alias neo='neofetch'
+alias devuan='/home/ivan/Scripts/auto_devuan.sh'
+alias photocraft='/home/ivan/Ports/photocraft-0.7.0-freebsd-x86_64/bin/photocraft'
+
 
 #######
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
