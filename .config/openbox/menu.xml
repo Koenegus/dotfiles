@@ -84,6 +84,11 @@
         <action name="Execute">
 		  <command>./Scripts/ps.sh</command>
         </action>
+       </item>
+       <item label="Photocraft" icon ="/home/ivan/Pictures/icons/PC.png">
+        <action name="Execute">
+          <command>/home/ivan/Ports/photocraft-0.7.0-freebsd-x86_64/bin/photocraft</command>
+        </action>
       </item>
        <item label="nomacs" icon ="/usr/local/share/icons/Papirus/48x48/apps/nomacs.svg">
         <action name="Execute">
