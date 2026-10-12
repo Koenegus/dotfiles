@@ -7,7 +7,7 @@ export GDK_BACKEND=x11
 export QT_QPA_PLATFORMTHEME="qt5ct"
 export SAL_USE_VCLPLUGIN=gtk
 
-mixer vol=0.50:0.30
+mixer vol=0.40:0.35
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Accel Speed" 0.20
 xinput set-prop "TPPS/2 IBM TrackPoint" "libinput Accel Speed" 0.20
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
@@ -24,7 +24,6 @@ redshift -l -27.596670:-48.549170 -t 6000:4800 &
 
 xidle -area 3 -delay 0 -sw -program "/usr/local/bin/skippy-xd" &
 xidle -area 3 -delay 0 -se -program "/home/ivan/Scripts/desktop.sh" &
-xidle -program /usr/local/bin/slock -timeout 360 &
 
 sleep 1
 tmux new-session -d -s chat_session nchat &
