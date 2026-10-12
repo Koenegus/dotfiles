@@ -1,6 +1,6 @@
 #!/bin/sh
 
-DZEN_OPTS="-dock -ta c -e 'button3=' -p -fn Monospace:size=8 -w 1920 -h 20 -x 0 -y 1080"
+DZEN_OPTS="-dock -ta c -e 'button3=' -p -fn NotoSans:size=8 -w 1920 -h 20 -x 0 -y 1080"
 
 while true; do
     env TERM=dumb top -b -d 2 | awk '
