@@ -80,12 +80,7 @@
           <command>gimp</command>
         </action>
 		</item>
-		<item label="Photoshop" icon ="/usr/local/share/icons/Papirus/48x48/apps/photoshop.svg">
-        <action name="Execute">
-		  <command>./Scripts/ps.sh</command>
-        </action>
-       </item>
-       <item label="Photocraft" icon ="/home/ivan/Pictures/icons/PC.png">
+       <item label="PhotoCraft" icon ="/home/ivan/Ports/photocraft-0.7.0-freebsd-x86_64/share/icons/hicolor/32x32/apps/ai.storyteller.photocraft.png">
         <action name="Execute">
           <command>/home/ivan/Ports/photocraft-0.7.0-freebsd-x86_64/bin/photocraft</command>
         </action>
