@@ -29,5 +29,7 @@ sleep 1
 tmux new-session -d -s chat_session nchat &
 mpg123 /home/ivan/Music/Sounds/macOS_X.mp3 > /dev/dsp 2> /dev/null & 
 
+sleep 3 && wpa_gui -t &
+
 exec openbox
 '
