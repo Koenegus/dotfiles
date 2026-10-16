@@ -82,7 +82,7 @@
 		</item>
        <item label="PhotoCraft" icon ="/home/ivan/Ports/photocraft-0.7.0-freebsd-x86_64/share/icons/hicolor/32x32/apps/ai.storyteller.photocraft.png">
         <action name="Execute">
-          <command>/home/ivan/Ports/photocraft-0.7.0-freebsd-x86_64/bin/photocraft</command>
+          <command>photocraft</command>
         </action>
       </item>
        <item label="nomacs" icon ="/usr/local/share/icons/Papirus/48x48/apps/nomacs.svg">
