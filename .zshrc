@@ -85,7 +85,6 @@ alias code='code-oss'
 alias twitter='surf 'x.com''
 alias neo='neofetch'
 alias devuan='/home/ivan/Scripts/auto_devuan.sh'
-alias photocraft='/home/ivan/Ports/photocraft-0.7.0-freebsd-x86_64/bin/photocraft'
 
 
 #######
