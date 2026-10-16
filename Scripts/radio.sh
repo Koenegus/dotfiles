@@ -12,6 +12,9 @@ echo "Options:
 5 - J1GOLD
 6 - ottava
 7 - gotanno.love
+8 - karolyi Ch1
+9 - karolyi Ch2 
+10 - karolyi Ch3
 "
 
 read -p "Choose: " op
@@ -31,6 +34,12 @@ case $op in
 				;;
 		7)		$listen 'https://radio.gotanno.love/'
 				;;
+        8)      $listen 'http://stream.tilos.hu/karolyi-chill-eclectic'
+                ;;
+        9)      $listen 'http://stream.tilos.hu/karolyi-breaks-dnb'
+                ;;
+        10)     $listen 'http://stream.tilos.hu/karolyi-mixes'
+                ;;
 		jaja)   $listen $dir/Sounds/Promotech.mp3
 				;;
         falcao) $random $dir/Humor/Falcao/*/*.mp3
