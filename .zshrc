@@ -85,7 +85,9 @@ alias code='code-oss'
 alias twitter='surf 'x.com''
 alias neo='neofetch'
 alias devuan='/home/ivan/Scripts/auto_devuan.sh'
-
+alias rec='/home/ivan/Scripts/Rec.sh'
+alias juegos='/home/ivan/Scripts/juegos.sh'
+alias thunar='/home/ivan/Scripts/thunar.sh'
 
 #######
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
