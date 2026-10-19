@@ -15,7 +15,7 @@ xsetroot -cursor_name left_ptr
 setxkbmap -layout br -variant thinkpad
 xhost +local:
 
-feh --bg-fill ~/Pictures/Wallpapers/hazuki4.jpg &
+feh --bg-fill ~/Pictures/Wallpapers/chatos/cristo_no_deserto.png &
 picom &
 /home/ivan/Scripts/dzen2.sh &
 tint2 &
@@ -33,3 +33,4 @@ sleep 3 && wpa_gui -t &
 
 exec openbox
 '
+
