@@ -10,7 +10,7 @@ Terminal)
     /home/ivan/Scripts/term.sh &
 	;;
 File_Manager)
-    thunar &
+    /home/ivan/Scripts/thunar.sh &
 	;;
 Mail)
     claws-mail &
