@@ -7,7 +7,7 @@ export GDK_BACKEND=x11
 export QT_QPA_PLATFORMTHEME=qt6ct
 export QT_LOGGING_RULES="qt.qpa.theme.gnome=false"
 
-mixer vol=0.35:0.30
+mixer vol=0.40:0.30
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Accel Speed" 0.20
 xinput set-prop "TPPS/2 IBM TrackPoint" "libinput Accel Speed" 0.20
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
@@ -22,15 +22,11 @@ tint2 &
 xbindkeys &
 redshift -l -27.596670:-48.549170 -t 6000:4800 &
 
-xidle -area 3 -delay 0 -sw -program "/usr/local/bin/skippy-xd" &
-xidle -area 3 -delay 0 -se -program "/home/ivan/Scripts/desktop.sh" &
-
-sleep 1
 tmux new-session -d -s chat_session nchat &
 mpg123 /home/ivan/Music/Sounds/macOS_X.mp3 > /dev/dsp 2> /dev/null & 
 
 sleep 3 && wpa_gui -t &
 
-exec openbox
+exec bspwm
 '
 
