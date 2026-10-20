@@ -14,5 +14,9 @@ bspc config gapless_monocle      true
 bspc config focus_follows_pointer false
 
 # rules
-#bspc rule -a mgba-qt state=floating
+bspc rule -a mGBA state=floating
+bspc rule -a org.dosbox_staging.dosbox_staging state=floating
+bspc rule -a Snes9x-gtk state=floating
+bspc rule -a pwcview state=floating
+bspc rule -a lumina-calculator state=floating
 bspc config bottom_padding 15
