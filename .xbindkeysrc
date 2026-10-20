@@ -95,3 +95,55 @@
 
 "/home/ivan/Scripts/audio_mute.sh"
   XF86AudioMute
+
+#bspwm
+"bspc node -f west"
+  Mod4 + Left
+"bspc node -f south"
+  Mod4 + Down
+"bspc node -f north"
+  Mod4 + Up
+"bspc node -f east"
+  Mod4 + Right
+"bspc node -c"
+  Mod4 + q
+
+"bspc node -s west"
+  Mod4 + Shift + Left
+"bspc node -s south"
+  Mod4 + Shift + Down
+"bspc node -s north"
+  Mod4 + Shift + Up
+"bspc node -s east"
+  Mod4 + Shift + Right
+
+"bspc desktop -f ^1"
+  Mod4 + 1
+"bspc desktop -f ^2"
+  Mod4 + 2
+"bspc desktop -f ^3"
+  Mod4 + 3
+"bspc desktop -f ^4"
+  Mod4 + 4
+"bspc desktop -f ^5"
+  Mod4 + 5
+
+"bspc node -d ^1 --follow"
+  Mod4 + Shift + 1
+"bspc node -d ^2 --follow"
+  Mod4 + Shift + 2
+"bspc node -d ^3 --follow"
+  Mod4 + Shift + 3
+"bspc node -d ^4 --follow"
+  Mod4 + Shift + 4
+"bspc node -d ^5 --follow"
+  Mod4 + Shift + 5
+
+"bspc node -t floating"
+  Mod4 + n
+"bspc node -t tiled"
+  Mod4 + t
+"bspc node -t fullscreen"
+  Mod4 + Shift + n
+"bspc desktop -l next"
+  Mod4 + m
