@@ -1,6 +1,6 @@
 #!/bin/sh
 
-main=$(printf "Search\nTerminal\nFile_Manager\nMail\nCaffeine\ni2pd\nVOSS\ntailscale\nwebcamd\nUnmount\nPrint\nxkill\nslock\nRestart_Wifibox\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn monospace:size=8 -sb red)
+main=$(printf "Search\nTerminal\nFile_Manager\nBrowsers\nMail\nCaffeine\ni2pd\nVOSS\ntailscale\nwebcamd\nUnmount\nPrint\nxkill\nslock\nRestart_Wifibox\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn monospace:size=8 -sb red)
 
 case "$main" in
 Search)
@@ -12,6 +12,16 @@ Terminal)
 File_Manager)
     /home/ivan/Scripts/thunar.sh &
 	;;
+Browsers)
+   app=$(printf "Librewolf\nTor\n" | dmenu -b -fn monospace:size=8 -sb red)
+   case "$app" in
+   Librewolf)
+		doas jexec -u ivan browsers librewolf &
+		;;
+   Tor)
+	    doas jexec -u ivan browsers tor-browser &
+   esac
+   ;;
 Mail)
     claws-mail &
 	;;
