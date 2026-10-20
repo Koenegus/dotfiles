@@ -1,0 +1,18 @@
+#!/bin/sh
+
+# desktops
+bspc monitor -d 1 2 3 4 5
+
+# look
+bspc config border_width         2
+bspc config window_gap           2
+bspc config split_ratio          0.50
+bspc config borderless_monocle   true
+bspc config gapless_monocle      true
+
+# focus
+bspc config focus_follows_pointer false
+
+# rules
+#bspc rule -a mgba-qt state=floating
+bspc config bottom_padding 15
