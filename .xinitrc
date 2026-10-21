@@ -7,7 +7,7 @@ export GDK_BACKEND=x11
 export QT_QPA_PLATFORMTHEME=qt6ct
 export QT_LOGGING_RULES="qt.qpa.theme.gnome=false"
 
-mixer vol=0.40:0.30
+mixer vol=0.35:0.30
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Accel Speed" 0.20
 xinput set-prop "TPPS/2 IBM TrackPoint" "libinput Accel Speed" 0.20
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
