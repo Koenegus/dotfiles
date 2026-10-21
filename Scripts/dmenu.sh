@@ -1,6 +1,6 @@
 #!/bin/sh
 
-main=$(printf "Search\nTerminal\nFile_Manager\nBrowsers\nMail\nCaffeine\ni2pd\nVOSS\ntailscale\nwebcamd\nUnmount\nPrint\nxkill\nslock\nRestart_Wifibox\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn monospace:size=8 -sb red)
+main=$(printf "Search\nTerminal\nFile_Manager\nBrowsers\nMail\nPodman\nCaffeine\ni2pd\nVOSS\ntailscale\nwebcamd\nUnmount\nPrint\nxkill\nslock\nRestart_Wifibox\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn monospace:size=8 -sb red)
 
 case "$main" in
 Search)
@@ -25,6 +25,16 @@ Browsers)
 Mail)
     claws-mail &
 	;;
+Podman)
+    app=$(printf "pgadmin4_start\npgadmin4_stop\n" | dmenu -b -fn monospace:size=8 -sb red)
+    case "$app" in 
+    pgadmin4_start)
+        /home/ivan/Scripts/podman_start.sh &
+        ;;
+    pgadmin4_stop)
+        /home/ivan/Scripts/podman_stop.sh &
+    esac
+    ;;
 Caffeine)
     caffeine &
     ;;
