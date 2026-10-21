@@ -245,7 +245,7 @@ clock_background_id = 2
 clock_tooltip = 
 clock_tooltip_timezone = 
 clock_lclick_command = st -f monospace:size=10 -e tmux attach -t chat_session &
-clock_rclick_command = 
+clock_rclick_command = xcalendar & 
 clock_mclick_command = 
 clock_uwheel_command = 
 clock_dwheel_command = 
