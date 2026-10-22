@@ -19,8 +19,8 @@
 "/home/ivan/Scripts/thunar.sh"
     Mod4 + f
 
-# LibreOffice
-"libreoffice"
+# Office
+"/home/ivan/Scripts/office.py"
     Mod4 + o
 
 # Claws Mail
