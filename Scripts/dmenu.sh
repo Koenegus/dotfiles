@@ -1,6 +1,6 @@
 #!/bin/sh
 
-main=$(printf "Search\nTerminal\nFile_Manager\nBrowsers\nMail\nPodman\nCaffeine\ni2pd\nVOSS\ntailscale\nwebcamd\nUnmount\nPrint\nxkill\nslock\nRestart_Wifibox\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn monospace:size=8 -sb red)
+main=$(printf "Search\nTerminal\nFile_Manager\nBrowsers\nMail\nPodman\nPostgreSQL\nCaffeine\ni2pd\nVOSS\ntailscale\nwebcamd\nUnmount\nPrint\nxkill\nslock\nRe_Wifibox\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn monospace:size=8 -sb red)
 
 case "$main" in
 Search)
@@ -35,6 +35,16 @@ Podman)
         /home/ivan/Scripts/podman_stop.sh &
     esac
     ;;
+PostgreSQL)
+   app=$(printf "Start_Service\nStop_Service\n" | dmenu -b -fn monospace:size=8 -sb red)
+   case "$app" in
+   Start_Service)
+		/home/ivan/Scripts/postgresql_start.sh &
+		;;
+   Stop_Service)
+		/home/ivan/Scripts/postgresql_stop.sh &
+   esac
+   ;;
 Caffeine)
     caffeine &
     ;;
@@ -97,7 +107,7 @@ xkill)
 slock)
     slock &
 	;;
-Restart_Wifibox)
+Re_Wifibox)
     /home/ivan/Scripts/wifibox.sh &
 	;;
 Suspend)
