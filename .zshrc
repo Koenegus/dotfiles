@@ -91,6 +91,7 @@ alias thunar='/home/ivan/Scripts/thunar.sh'
 alias wordcraft='WGPU_BACKEND=gl /home/ivan/Ports/wordcraft-0.9.0-freebsd-x86_64/wordcraft'
 alias deckcraft='WGPU_BACKEND=gl /home/ivan/Ports/deckcraft-0.9.0-freebsd-x86_64/bin/deckcraft'
 alias gridcraft='WGPU_BACKEND=gl /home/ivan/Ports/gridcraft-0.10.0-freebsd-x86_64/bin/gridcraft'
+alias x='exit'
 
 #######
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
