@@ -82,7 +82,7 @@ alias fbsdinfo='/home/ivan/Scripts/system_info.sh'
 alias st='st -f 'JetBrainsMonoNerdFont:size=10' -e tmux'
 alias stress-nigga='stress-ng --vm 1 --vm-bytes 12G --vm-keep --timeout 5m'
 alias code='code-oss'
-alias twitter='surf 'x.com''
+alias twitter='surf 'x.com' 2> /dev/null'
 alias neo='neofetch'
 alias devuan='/home/ivan/Scripts/auto_devuan.sh'
 alias rec='/home/ivan/Scripts/Rec.sh'
@@ -92,6 +92,7 @@ alias wordcraft='WGPU_BACKEND=gl /home/ivan/Ports/wordcraft-0.9.0-freebsd-x86_64
 alias deckcraft='WGPU_BACKEND=gl /home/ivan/Ports/deckcraft-0.9.0-freebsd-x86_64/bin/deckcraft'
 alias gridcraft='WGPU_BACKEND=gl /home/ivan/Ports/gridcraft-0.10.0-freebsd-x86_64/bin/gridcraft'
 alias x='exit'
+alias sublime_text='sublime_text 2> /dev/null'
 
 #######
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
