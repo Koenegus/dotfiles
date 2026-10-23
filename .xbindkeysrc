@@ -20,7 +20,7 @@
     Mod4 + f
 
 # Office
-"/home/ivan/Scripts/office.py"
+"libreoffice"
     Mod4 + o
 
 # Claws Mail
@@ -155,6 +155,8 @@
 "bspc node -d ^9 --follow"
   Mod4 + Shift + 9
 
+"bspc node -g sticky"
+  Mod4 + s
 "bspc node -t floating"
   Mod4 + n
 "bspc node -t tiled"
