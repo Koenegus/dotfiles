@@ -1,15 +1,15 @@
 #!/bin/sh
 
-main=$(printf "Search\nTerminal\nFile_Manager\nBrowsers\nMail\nPodman\nPostgreSQL\nCaffeine\ni2pd\nVOSS\ntailscale\nwebcamd\nUnmount\nPrint\nxkill\nslock\nRe_Wifibox\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn monospace:size=8 -sb red)
+main=$(printf "Search\nTerm\nfm\nBrowsers\nMail\nPodman\nPostgreSQL\nCaffeine\ni2pd\nVOSS\ntailscale\nVPN\nwebcamd\nUnmount\nPrint\nxkill\nslock\nRe_Wifibox\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn monospace:size=8 -sb red)
 
 case "$main" in
 Search)
     dmenu_run -b -fn monospace:size=8 -sb red &
 	;;
-Terminal)
+Term)
     /home/ivan/Scripts/term.sh &
 	;;
-File_Manager)
+fm)
     /home/ivan/Scripts/thunar.sh &
 	;;
 Browsers)
@@ -79,6 +79,16 @@ tailscale)
         ;;
    mount)
        /home/ivan/Scripts/mount_tails.sh &
+   esac
+   ;;
+VPN)
+   app=$(printf "Start_Service\nStop_Service\n" | dmenu -b -fn monospace:size=8 -sb red)
+   case "$app" in
+   Start_Service)
+		/home/ivan/Scripts/vpn_start.sh &
+		;;
+   Stop_Service)
+		/home/ivan/Scripts/vpn_stop.sh &
    esac
    ;;
 webcamd)
