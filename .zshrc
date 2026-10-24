@@ -93,6 +93,7 @@ alias deckcraft='WGPU_BACKEND=gl /home/ivan/Ports/deckcraft-0.9.0-freebsd-x86_64
 alias gridcraft='WGPU_BACKEND=gl /home/ivan/Ports/gridcraft-0.10.0-freebsd-x86_64/bin/gridcraft'
 alias x='exit'
 alias sublime_text='sublime_text 2> /dev/null'
+alias vncviewer='vncviewer 127.0.0.1:5900'
 
 #######
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
