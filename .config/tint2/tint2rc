@@ -312,7 +312,7 @@ separator_padding = 1 0
 # Executor 1
 execp = new
 execp_command = curl 'wttr.is/?format=1'
-execp_interval = 1200
+execp_interval = 300
 execp_has_icon = 0
 execp_cache_icon = 1
 execp_continuous = 0
