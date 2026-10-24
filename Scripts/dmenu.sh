@@ -108,7 +108,7 @@ webcamd)
 Unmount)
     /home/ivan/Scripts/umont.sh &
     ;;
-Screenshot)
+Print)
     /home/ivan/Scripts/scrot.sh &
 	;;
 xkill)
