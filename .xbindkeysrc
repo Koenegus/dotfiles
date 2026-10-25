@@ -165,3 +165,6 @@
   Mod4 + Shift + n
 "bspc desktop -l next"
   Mod4 + m
+
+"bspc wm -r"
+  Mod4 + Shift + r 
