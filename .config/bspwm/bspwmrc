@@ -24,4 +24,5 @@ bspc rule -a fbsd-duckstation-qt state=floating
 bspc rule -a Netsurf-gtk state=floating
 bspc rule -a XCalendar state=floating
 bspc rule -a Java state=floating
+bspc rule -a feh state=floating
 bspc config bottom_padding 15
