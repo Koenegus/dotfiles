@@ -17,6 +17,7 @@ echo "Options:
 10 - Yu-Gi-Oh! Joey The Passion
 11 - Victoria II
 12 - Colin McRae Rally 2
+13 - Rewrite+
 "
 
 read -p "Choose: " op
@@ -45,6 +46,8 @@ case $op in
         11)     dir /vic2.sh
                 ;;
         12)     dir /cmr2.sh
+                ;;
+        13)     dir /rewrite.sh
                 ;;
         quit)   echo "ciao $USER"
                 ;;
