@@ -6,6 +6,7 @@ export XCURSOR_SIZE=32
 export GDK_BACKEND=x11
 export QT_QPA_PLATFORMTHEME=qt6ct
 export QT_LOGGING_RULES="qt.qpa.theme.gnome=false"
+export MESA_VK_WSI_PRESENT_MODE=fifo
 
 mixer vol=0.35:0.30
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Accel Speed" 0.20
