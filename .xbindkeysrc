@@ -155,6 +155,15 @@
 "bspc node -d ^9 --follow"
   Mod4 + Shift + 9
 
+"bspc node -v -20 0"
+  Mod4 + Mod1 + Left
+"bspc node -v 0 20"
+  Mod4 + Mod1 + Down
+"bspc node -v 0 -20"
+  Mod4 + Mod1 + Up
+"bspc node -v 20 0"
+  Mod4 + Mod1 + Right
+
 "bspc node -g sticky"
   Mod4 + s
 "bspc node -t floating"
@@ -168,3 +177,21 @@
 
 "bspc wm -r"
   Mod4 + Shift + r 
+
+"bspc node -z left -20 0 || bspc node -z right -20 0"
+  Mod4 + Control + Left
+"bspc node -z right 20 0 || bspc node -z left 20 0"
+  Mod4 + Control + Right
+"bspc node -z top 0 -20 || bspc node -z bottom 0 -20"
+  Mod4 + Control + Up
+"bspc node -z bottom 0 20 || bspc node -z top 0 20"
+  Mod4 + Control + Down
+
+"bspc desktop -f next"
+  Mod4 + Next
+"bspc desktop -f prev"
+  Mod4 + Prior
+"bspc node -d next --follow"
+  Mod4 + Shift + Next
+"bspc node -d prev --follow"
+  Mod4 + Shift + Prior
