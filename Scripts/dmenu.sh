@@ -127,7 +127,7 @@ Log_Out)
     pkill x &
 	;;
 Reboot)
-    doas shutdown -r now &
+    /home/ivan/Scripts/reboot.sh &
 	;;
 Power_Off)
     /home/ivan/Scripts/poweroff.sh &
