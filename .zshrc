@@ -57,7 +57,7 @@ alias tor-browser='doas jexec -u ivan browsers tor-browser'
 alias android='/home/ivan/Scripts/android.sh'
 alias android_stop='/home/ivan/Scripts/android_stop.sh'
 alias mpvs='mpv --no-audio-display --input-ipc-server=/tmp/mpv.sock'
-alias reboot='doas shutdown -r now'
+alias reboot='/home/ivan/Scripts/reboot.sh'
 alias pkg-size='pkg info -as | sort -k 2 -h | tail -20 | column -t'
 alias fastboot-at='/usr/local/bin/fastboot'
 alias ls="eza --icons --group-directories-first"
@@ -92,7 +92,6 @@ alias wordcraft='WGPU_BACKEND=gl /home/ivan/Ports/wordcraft-0.9.0-freebsd-x86_64
 alias deckcraft='WGPU_BACKEND=gl /home/ivan/Ports/deckcraft-0.9.0-freebsd-x86_64/bin/deckcraft'
 alias gridcraft='WGPU_BACKEND=gl /home/ivan/Ports/gridcraft-0.10.0-freebsd-x86_64/bin/gridcraft'
 alias x='exit'
-alias sublime_text='sublime_text 2> /dev/null'
 alias vncviewer='vncviewer 127.0.0.1:5900'
 
 #######
