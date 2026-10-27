@@ -81,7 +81,6 @@ alias dotfiles='/usr/local/bin/git --git-dir=/home/ivan/.dotfiles --work-tree=/h
 alias fbsdinfo='/home/ivan/Scripts/system_info.sh'
 alias st='st -f 'JetBrainsMonoNerdFont:size=10' -e tmux'
 alias stress-nigga='stress-ng --vm 1 --vm-bytes 12G --vm-keep --timeout 5m'
-alias code='code-oss'
 alias twitter='surf 'x.com' 2> /dev/null'
 alias neo='neofetch'
 alias devuan='/home/ivan/Scripts/auto_devuan.sh'
@@ -160,4 +159,8 @@ dotremove() {
 
 py3() {
     /usr/local/bin/python3 "$@" 2>/dev/null
+}
+
+code() {
+    /home/ivan/Ports/VSCodium/squashfs-root/bin/codium --no-sandbox --disable-gpu --no-zygote --in-process-gpu --font-render-hinting=none "$@" 2>/dev/null
 }
