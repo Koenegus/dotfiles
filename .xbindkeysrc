@@ -11,8 +11,8 @@
 "doas jexec -u ivan browsers librewolf"
     Mod4 + w
 
-# Chromium
-"doas jexec -u ivan browsers chrome"
+# VSCode
+"/home/ivan/Ports/VSCodium/squashfs-root/bin/codium --no-sandbox --disable-gpu --no-zygote --in-process-gpu --font-render-hinting=none"
     Mod4 + c
 	
 # File Manager
