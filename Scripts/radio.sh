@@ -1,7 +1,7 @@
 #!/bin/sh
 listen="mpv --no-audio-display --input-ipc-server=/tmp/mpv.sock "
 yout="mpv --no-video --input-ipc-server=/tmp/mpv.sock "
-dir="/home/ivan/Music/"
+dir="/home/ivan/Music"
 random="mpv --no-audio-display --input-ipc-server=/tmp/mpv.sock --shuffle "
 
 echo "Options: 
