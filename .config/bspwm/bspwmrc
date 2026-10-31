@@ -9,6 +9,7 @@ bspc config window_gap           2
 bspc config split_ratio          0.55
 bspc config borderless_monocle   true
 bspc config gapless_monocle      true
+bspc config bottom_padding 15
 
 # focus
 bspc config focus_follows_pointer false
@@ -26,8 +27,9 @@ bspc rule -a XCalendar state=floating
 bspc rule -a Java state=floating
 bspc rule -a feh state=floating
 bspc rule -a Xarchiver state=floating
-bspc config bottom_padding 15
 bspc rule -a librewolf desktop='^2' follow=on
+bspc rule -a qutebrowser desktop='^2' follow=on
+bspc rule -a tor-browser desktop='^2' follow=on
 bspc rule -a mpv desktop='^5' follow=on
 bspc rule -a soffice.bin desktop='^4' follow=on
 bspc rule -a Claws-mail desktop='^6' follow=on
