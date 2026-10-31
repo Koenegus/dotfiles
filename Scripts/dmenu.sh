@@ -1,6 +1,6 @@
 #!/bin/sh
 
-main=$(printf "Search\nTerm\nfm\nBrowsers\nMail\nPodman\nPostgreSQL\nCaffeine\ni2pd\nVOSS\ntailscale\nVPN\nwebcamd\nUnmount\nPrint\nxkill\nslock\nRe_Wifibox\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn monospace:size=8 -sb red)
+main=$(printf "Search\nTerm\nfm\nBrowsers\nTransgui\nMail\nPodman\nPostgreSQL\nCaffeine\ni2pd\nVOSS\ntailscale\nVPN\nwebcamd\nUnmount\nPrint\nxkill\nslock\nWifi\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn monospace:size=8 -sb red)
 
 case "$main" in
 Search)
@@ -22,6 +22,9 @@ Browsers)
 	    doas jexec -u ivan browsers tor-browser &
    esac
    ;;
+Transgui)
+    transgui &
+    ;;
 Mail)
     claws-mail &
 	;;
@@ -117,7 +120,7 @@ xkill)
 slock)
     slock &
 	;;
-Re_Wifibox)
+Wifi)
     /home/ivan/Scripts/wifibox.sh &
 	;;
 Suspend)
