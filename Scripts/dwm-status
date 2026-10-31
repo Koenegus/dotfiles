@@ -1,0 +1,32 @@
+#!/bin/sh
+
+WEATHER_INTERVAL=300
+
+volume() {
+    mixer -o vol | awk -F= '
+    /vol.volume/ { vol = $2 * 100 }
+    /vol.mute/   { mute = $2 }
+    END { printf "%.0f%%%s", vol, (mute == "on" ? " MUTE" : " SOUND") }'
+}
+
+battery() {
+    bat=$(sysctl -n hw.acpi.battery.life)
+    if [ "$(sysctl -n hw.acpi.acline)" = "1" ]; then
+        printf '%s%%+' "$bat"
+    else
+        printf '%s%%' "$bat"
+    fi
+}
+
+(
+    while true; do
+        curl -s 'wttr.in/?format=1' > /tmp/weather.tmp && mv /tmp/weather.tmp /tmp/weather
+        sleep "$WEATHER_INTERVAL"
+    done
+) &
+
+while true; do
+    WEATHER=$(cat /tmp/weather 2>/dev/null)
+    xsetroot -name "$WEATHER | $(volume) | BAT $(battery) | $(date '+%a %d/%m %H:%M:%S')"
+    sleep 1
+done
