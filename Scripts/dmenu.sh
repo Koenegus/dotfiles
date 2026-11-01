@@ -49,7 +49,7 @@ PostgreSQL)
    esac
    ;;
 Caffeine)
-    caffeine &
+    /home/ivan/Scripts/caffeine.sh &
     ;;
 i2pd)
    app=$(printf "Start_Service\nStop_Service\n" | dmenu -b -fn monospace:size=8 -sb red)
