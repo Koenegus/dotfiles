@@ -93,6 +93,8 @@ alias x='exit'
 alias vncviewer='vncviewer 127.0.0.1:5900'
 alias pkg_check='/home/ivan/Scripts/pkg-preupgrade.sh'
 alias wiimote='/home/ivan/Documents/C/Wii/start.sh'
+alias groff='groff -Kutf8 -Tutf8'
+alias caffeine='/home/ivan/Scripts/caffeine.sh'
 
 #######
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
