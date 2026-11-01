@@ -55,12 +55,15 @@ static const Rule rules[] = {
 	{ "XCalendar",                    NULL,     NULL,  0,         1,          -1 },
 	{ "Java",                         NULL,     NULL,  0,         1,          -1 },
 	{ "feh",                          NULL,     NULL,  0,         1,          -1 },
+	{ "pcsx2-qt",                    NULL,     NULL,  0,         1,          -1 },
+	{ "dolphin-emu",                    NULL,     NULL,  0,         1,          -1 },
 	{ "Xarchiver",                    NULL,     NULL,  0,         1,          -1 },
 	{ "librewolf",                    NULL,     NULL,  1 << 1,    0,          -1 },
 	{ "qutebrowser",                  NULL,     NULL,  1 << 1,    0,          -1 },
 	{ "tor-browser",                  NULL,     NULL,  1 << 1,    0,          -1 },
 	{ "mpv",                          NULL,     NULL,  1 << 4,    0,          -1 },
 	{ "soffice.bin",                  NULL,     NULL,  1 << 3,    0,          -1 },
+	{ "calibre",                      NULL,     NULL,  1 << 3,    0,          -1 },
 	{ "Claws-mail",                   NULL,     NULL,  1 << 5,    0,          -1 },
 	{ "codium",                       NULL,     NULL,  1 << 6,    0,          -1 },
 	{ "code-oss",                     NULL,     NULL,  1 << 6,    0,          -1 },
@@ -109,7 +112,7 @@ static const char *bri_up[]   = { "backlight", "incr", "5", NULL };
 static const char *geanycmd[] = { "geany", NULL };
 static const char *codecmd[] = {"/home/ivan/Ports/VSCodium/squashfs-root/bin/codium", "--no-sandbox", "--disable-gpu", "--no-zygote", "--in-process-gpu", "--font-render-hinting=non3", NULL};
 static const char *editcmd[] = { "leafpad", NULL};
-static const char *stcmd[] = { "/home/ivan/Scripts/term.sh", NULL };
+static const char *stcmd[] = {"/home/ivan/Scripts/term.sh", NULL};
 static const char *lockcmd[] = { "slock", NULL};
 static const char *zzzcmd[] = {"/home/ivan/Scripts/lock.sh", NULL};
 static const char *printcmd[] = {"/home/ivan/Scripts/scrot.sh", NULL};
