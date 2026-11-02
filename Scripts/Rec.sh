@@ -21,12 +21,16 @@ echo "Options:
 2 - Video + Mic
 3 - Video + Loopback (VOSS)
 4 - Video + Loopback (VOSS) + Mic
+5 - Audio
 "
 
 read -p "Choose: " op
 
 case $op in
     1|2|3|4)
+        ;;
+    5)
+        ffmpeg -f oss -i /dev/dsp1 audio-$(date +%F-%H%M%S).wav
         ;;
     *)
         echo "Invalid option!!!"
