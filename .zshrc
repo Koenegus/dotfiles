@@ -92,7 +92,6 @@ alias gridcraft='WGPU_BACKEND=gl /home/ivan/Ports/gridcraft-0.10.0-freebsd-x86_6
 alias x='exit'
 alias vncviewer='vncviewer 127.0.0.1:5900'
 alias pkg_check='/home/ivan/Scripts/pkg-preupgrade.sh'
-alias wiimote='/home/ivan/Documents/C/Wii/start.sh'
 alias groff='groff -Kutf8 -Tutf8'
 alias caffeine='/home/ivan/Scripts/caffeine.sh'
 
@@ -166,4 +165,8 @@ py3() {
 
 code() {
     /home/ivan/Ports/VSCodium/squashfs-root/bin/codium --no-sandbox --disable-gpu --no-zygote --in-process-gpu --font-render-hinting=none "$@" 2>/dev/null
+}
+
+cheat(){
+    curl cheat.sh/"$@"
 }
