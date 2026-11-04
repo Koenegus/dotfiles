@@ -1,11 +1,13 @@
 #!/bin/sh
 if xset q | grep -q "DPMS is Enabled"; then
     xset s off -dpms
+    mpv /home/ivan/Music/Sounds/ubuntu_ex.wav > /dev/null &
     notify-send -i /usr/local/share/icons/Papirus/48x48/categories/caffeine.svg "Caffeine" "Service on"
 else
     xset s on
     xset s 600 600
     xset +dpms
     xset dpms 600 600 600
+    mpv /home/ivan/Music/Sounds/ubuntu_ex.wav > /dev/null &
     notify-send -i /usr/local/share/icons/Papirus/48x48/categories/caffeine.svg "Caffeine" "Service OFF"
 fi
