@@ -4,6 +4,7 @@ transparency = 15
 frame_color = "#875a48"
 separator_color= frame
 highlight = "#875a48"
+font = JetBrainsMono Nerd Font 8
 
 [urgency_low]
 background = "#39261e"
