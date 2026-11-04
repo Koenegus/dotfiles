@@ -46,6 +46,8 @@ case $op in
                 ;;
         choro)  $random $dir/OSTs/Choro\ Club/*/*.flac
                 ;;
+        mono)   $random $dir/OSTs/Monogatari\ Series/*/*.mp3
+                ;;
         quit)   echo "ciao $USER"
                 ;;
         exit)   echo "ciao $USER"
