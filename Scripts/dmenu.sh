@@ -1,10 +1,10 @@
 #!/bin/sh
 
-main=$(printf "Search\nTerm\nfm\nBrowsers\nTransgui\nMail\nPodman\nPostgreSQL\nCaffeine\ni2pd\nVOSS\ntailscale\nVPN\nwebcamd\nUnmount\nPrint\nxkill\nslock\nWifi\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn monospace:size=8 -sb red)
+main=$(printf "Search\nTerm\nfm\nBrowsers\nTransgui\nMail\nPodman\nPostgreSQL\nCaffeine\ni2pd\nVOSS\ntailscale\nVPN\nwebcamd\nUnmount\nPrint\nxkill\nslock\nWifi\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn JetBrainsMonoNerdFont:size=8 -sb red)
 
 case "$main" in
 Search)
-    dmenu_run -b -fn monospace:size=8 -sb red &
+    dmenu_run -b -fn JetBrainsMonoNerdFont:size=8 -sb red &
 	;;
 Term)
     /home/ivan/Scripts/term.sh &
@@ -13,7 +13,7 @@ fm)
     /home/ivan/Scripts/thunar.sh &
 	;;
 Browsers)
-   app=$(printf "Librewolf\nTor\n" | dmenu -b -fn monospace:size=8 -sb red)
+   app=$(printf "Librewolf\nTor\n" | dmenu -b -fn JetBrainsMonoNerdFont:size=8 -sb red)
    case "$app" in
    Librewolf)
 		doas jexec -u ivan browsers librewolf &
@@ -29,7 +29,7 @@ Mail)
     claws-mail &
 	;;
 Podman)
-    app=$(printf "pgadmin4_start\npgadmin4_stop\n" | dmenu -b -fn monospace:size=8 -sb red)
+    app=$(printf "pgadmin4_start\npgadmin4_stop\n" | dmenu -b -fn JetBrainsMonoNerdFont:size=8 -sb red)
     case "$app" in 
     pgadmin4_start)
         /home/ivan/Scripts/podman_start.sh &
@@ -39,7 +39,7 @@ Podman)
     esac
     ;;
 PostgreSQL)
-   app=$(printf "Start_Service\nStop_Service\n" | dmenu -b -fn monospace:size=8 -sb red)
+   app=$(printf "Start_Service\nStop_Service\n" | dmenu -b -fn JetBrainsMonoNerdFont:size=8 -sb red)
    case "$app" in
    Start_Service)
 		/home/ivan/Scripts/postgresql_start.sh &
@@ -52,7 +52,7 @@ Caffeine)
     /home/ivan/Scripts/caffeine.sh &
     ;;
 i2pd)
-   app=$(printf "Start_Service\nStop_Service\n" | dmenu -b -fn monospace:size=8 -sb red)
+   app=$(printf "Start_Service\nStop_Service\n" | dmenu -b -fn JetBrainsMonoNerdFont:size=8 -sb red)
    case "$app" in
    Start_Service)
 		/home/ivan/Scripts/i2pd_start.sh &
@@ -62,7 +62,7 @@ i2pd)
    esac
    ;;
 VOSS)
-   app=$(printf "Start_Service\nStop_Service\n" | dmenu -b -fn monospace:size=8 -sb red)
+   app=$(printf "Start_Service\nStop_Service\n" | dmenu -b -fn JetBrainsMonoNerdFont:size=8 -sb red)
    case "$app" in
    Start_Service)
 		/home/ivan/Scripts/voss_start.sh &
@@ -72,7 +72,7 @@ VOSS)
    esac
    ;;
 tailscale)
-   app=$(printf "Start_Service\nStop_Service\nmount\n" | dmenu -b -fn monospace:size=8 -sb red)
+   app=$(printf "Start_Service\nStop_Service\nmount\n" | dmenu -b -fn JetBrainsMonoNerdFont:size=8 -sb red)
    case "$app" in
    Start_Service)
 		/home/ivan/Scripts/start_tails.sh &
@@ -85,7 +85,7 @@ tailscale)
    esac
    ;;
 VPN)
-   app=$(printf "Start_Service\nStop_Service\n" | dmenu -b -fn monospace:size=8 -sb red)
+   app=$(printf "Start_Service\nStop_Service\n" | dmenu -b -fn JetBrainsMonoNerdFont:size=8 -sb red)
    case "$app" in
    Start_Service)
 		/home/ivan/Scripts/vpn_start.sh &
@@ -95,7 +95,7 @@ VPN)
    esac
    ;;
 webcamd)
-   app=$(printf "Start_Service\nStop_Service\npwcview\n" | dmenu -b -fn monospace:size=8 -sb red)
+   app=$(printf "Start_Service\nStop_Service\npwcview\n" | dmenu -b -fn JetBrainsMonoNerdFont:size=8 -sb red)
    case "$app" in
    Start_Service)
 		/home/ivan/Scripts/cam_start.sh &
