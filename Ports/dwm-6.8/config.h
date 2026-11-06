@@ -55,8 +55,9 @@ static const Rule rules[] = {
 	{ "XCalendar",                    NULL,     NULL,  0,         1,          -1 },
 	{ "Java",                         NULL,     NULL,  0,         1,          -1 },
 	{ "feh",                          NULL,     NULL,  0,         1,          -1 },
-	{ "pcsx2-qt",                    NULL,     NULL,  0,         1,          -1 },
-	{ "dolphin-emu",                    NULL,     NULL,  0,         1,          -1 },
+	{ "pcsx2-qt",                     NULL,     NULL,  0,         1,          -1 },
+	{ "dolphin-emu",                  NULL,     NULL,  0,         1,          -1 },
+	{ "cmr2.exe",                     NULL,     NULL,  0,         1,          -1 },
 	{ "Xarchiver",                    NULL,     NULL,  0,         1,          -1 },
 	{ "librewolf",                    NULL,     NULL,  1 << 1,    0,          -1 },
 	{ "qutebrowser",                  NULL,     NULL,  1 << 1,    0,          -1 },
@@ -67,6 +68,7 @@ static const Rule rules[] = {
 	{ "Claws-mail",                   NULL,     NULL,  1 << 5,    0,          -1 },
 	{ "codium",                       NULL,     NULL,  1 << 6,    0,          -1 },
 	{ "code-oss",                     NULL,     NULL,  1 << 6,    0,          -1 },
+	{ "zapfast",                      NULL,     NULL,  1 << 5,    0,          -1 },
 };
 
 /* layout(s) */
@@ -120,6 +122,7 @@ static const char *ptcmd[] = {"/home/ivan/Scripts/scrot_xclip.sh", NULL};
 static const char *resizecmd[] = {"/home/ivan/Scripts/screen.sh", NULL};
 static const char *pausecmd[] = {"/home/ivan/Scripts/mpv-command.py", "cycle", "pause", NULL};
 static const char *skippycmd[] = {"skippy-xd", NULL};
+static const char *zapcmd[]= {"/home/ivan/Ports/zapfast/target/release/zapfast", NULL};
 
 static Key keys[] = { 
 	/* modifier                     key        function        argument */
@@ -161,6 +164,7 @@ static Key keys[] = {
     { MODKEY,                       XK_s,      spawn,          {.v = skippycmd }},
     { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = resizecmd } },
     { MODKEY,                       XK_p,      spawn,          {.v = pausecmd }},
+    { MODKEY|ShiftMask,            XK_z,      spawn,          {.v = zapcmd }},
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
