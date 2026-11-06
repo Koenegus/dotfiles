@@ -94,6 +94,7 @@ alias vncviewer='vncviewer 127.0.0.1:5900'
 alias pkg_check='/home/ivan/Scripts/pkg-preupgrade.sh'
 alias groff='groff -Kutf8 -Tutf8'
 alias caffeine='/home/ivan/Scripts/caffeine.sh'
+alias zap='/home/ivan/Ports/zapfast/target/release/zapfast'
 
 #######
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
