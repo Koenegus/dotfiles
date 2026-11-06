@@ -98,6 +98,7 @@ alias zap='/home/ivan/Ports/zapfast/target/release/zapfast'
 
 #######
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
+export PATH="$HOME/Ports/AdmixTools/bin:$PATH"
 setopt INTERACTIVE_COMMENTS
 export EDITOR=nvim
 
