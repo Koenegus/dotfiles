@@ -26,7 +26,6 @@ redshift -l -27.596670:-48.549170 -t 6000:4800 &
 tmux new-session -d -s chat_session nchat &
 mpg123 /home/ivan/Music/Sounds/macOS_X.mp3 > /dev/dsp 2> /dev/null & 
 
-sleep 3 && wpa_gui -t &
 /home/ivan/Scripts/dwm-status &
 
 exec dwm
