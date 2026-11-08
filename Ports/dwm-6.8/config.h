@@ -68,7 +68,7 @@ static const Rule rules[] = {
 	{ "Claws-mail",                   NULL,     NULL,  1 << 5,    0,          -1 },
 	{ "codium",                       NULL,     NULL,  1 << 6,    0,          -1 },
 	{ "code-oss",                     NULL,     NULL,  1 << 6,    0,          -1 },
-	{ "zapfast",                      NULL,     NULL,  1 << 5,    0,          -1 },
+	{ "zapfast",                      NULL,     NULL,  1 << 8,    0,          -1 },
 };
 
 /* layout(s) */
