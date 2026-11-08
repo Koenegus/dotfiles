@@ -102,7 +102,7 @@ static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() 
 static const char *dmenucmd[] = {"dmenu", NULL};
 static const char *menucmd[] = { "/home/ivan/Scripts/dmenu.sh", NULL };
 static const char *webcmd[] = { "doas", "jexec", "-u", "ivan", "browsers", "librewolf", NULL};
-static const char *fmcmd[] = { "thunar", NULL};
+static const char *fmcmd[] = { "/home/ivan/Scripts/thunar.sh", NULL};
 static const char *officecmd[] = { "libreoffice", NULL};
 static const char *mailcmd[] = { "claws-mail", NULL };
 static const char *killcmd[] = { "xkill", NULL };
@@ -122,7 +122,7 @@ static const char *ptcmd[] = {"/home/ivan/Scripts/scrot_xclip.sh", NULL};
 static const char *resizecmd[] = {"/home/ivan/Scripts/screen.sh", NULL};
 static const char *pausecmd[] = {"/home/ivan/Scripts/mpv-command.py", "cycle", "pause", NULL};
 static const char *skippycmd[] = {"skippy-xd", NULL};
-static const char *zapcmd[]= {"/home/ivan/Ports/zapfast/target/release/zapfast", NULL};
+static const char *zapcmd[]= {"/home/ivan/Ports/zapfast-freebsd-systray/target/release/zapfast", NULL};
 
 static Key keys[] = { 
 	/* modifier                     key        function        argument */
