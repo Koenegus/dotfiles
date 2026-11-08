@@ -66,7 +66,6 @@ alias bat="apm"
 alias poweroff='/home/ivan/Scripts/poweroff.sh'
 alias xterm='xterm -bg black -fg white -fa "JetBrainsMono Nerd Font" -fs 10 tmux'
 alias pgadmin4='librewolf http://10.0.1.2:5050'
-alias brmodelo='/home/ivan/Scripts/brmodelo.sh'
 alias captura='nomacs /home/ivan/Pictures/Screenshots/2026 &'
 alias wine32='WINEPREFIX="/home/ivan/.wine32" wine '
 alias wine64='WINEPREFIX="/home/ivan/.wine" wine '
@@ -94,11 +93,10 @@ alias vncviewer='vncviewer 127.0.0.1:5900'
 alias pkg_check='/home/ivan/Scripts/pkg-preupgrade.sh'
 alias groff='groff -Kutf8 -Tutf8'
 alias caffeine='/home/ivan/Scripts/caffeine.sh'
-alias zap='/home/ivan/Ports/zapfast/target/release/zapfast'
+alias zap='/home/ivan/Ports/zapfast-freebsd-systray/target/release/zapfast'
 
 #######
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
-export PATH="$HOME/Ports/AdmixTools/bin:$PATH"
 setopt INTERACTIVE_COMMENTS
 export EDITOR=nvim
 
