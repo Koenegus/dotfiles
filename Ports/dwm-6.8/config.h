@@ -123,7 +123,7 @@ static const char *ptcmd[] = {"/home/ivan/Scripts/scrot_xclip.sh", NULL};
 static const char *resizecmd[] = {"/home/ivan/Scripts/screen.sh", NULL};
 static const char *pausecmd[] = {"/home/ivan/Scripts/mpv-command.py", "cycle", "pause", NULL};
 static const char *skippycmd[] = {"skippy-xd", NULL};
-static const char *zapcmd[]= {"/home/ivan/Ports/zapfast-freebsd-systray/target/release/zapfast", NULL};
+static const char *zapcmd[]= {"zapfast", NULL};
 
 static Key keys[] = { 
 	/* modifier                     key        function        argument */
