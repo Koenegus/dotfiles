@@ -7,7 +7,7 @@
 #                                      (use after changing patch/Makefile.local)
 
 PORTSDIR=/usr/ports
-PORTS="x11-fm/thunar x11-servers/xlibre-server"
+PORTS="x11-fm/thunar"
 LOG=/var/log/update-ports.log
 
 FORCE=0
