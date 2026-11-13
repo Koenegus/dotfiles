@@ -51,9 +51,6 @@ alias prismlauncher='/home/ivan/Scripts/prismlauncher.sh'
 alias :re='/home/ivan/Scripts/wifibox.sh'
 alias :eth='doas service netif restart em0'
 alias www='doas jexec -u ivan browsers librewolf'
-alias librewolf='doas jexec -u ivan browsers librewolf'
-#alias chrome='doas jexec -u ivan browsers chrome'
-alias tor-browser='doas jexec -u ivan browsers tor-browser'
 alias android='/home/ivan/Scripts/android.sh'
 alias android_stop='/home/ivan/Scripts/android_stop.sh'
 alias mpvs='mpv --no-audio-display --input-ipc-server=/tmp/mpv.sock'
@@ -93,6 +90,8 @@ alias vncviewer='vncviewer 127.0.0.1:5900'
 alias pkg_check='/home/ivan/Scripts/pkg-preupgrade.sh'
 alias groff='groff -Kutf8 -Tutf8'
 alias caffeine='/home/ivan/Scripts/caffeine.sh'
+alias freetube='doas jexec -u ivan electron /home/ivan/freetube.sh'
+alias yt='/home/ivan/Scripts/youtube.sh'
 
 #######
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
