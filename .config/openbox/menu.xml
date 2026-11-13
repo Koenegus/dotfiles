@@ -69,7 +69,7 @@
 		</item>
       <item label="VS Code" icon ="/usr/local/share/icons/Papirus/48x48/apps/vscode.svg">
         <action name="Execute">
-          <command>vscode</command>
+          <command>codium</command>
         </action>
       </item>
    </menu>
@@ -105,6 +105,11 @@
       <item label="Audacity" icon ="/usr/local/share/icons/Papirus/48x48/apps/audacity.svg ">
         <action name="Execute">
           <command>audacity</command>
+        </action>
+     </item>
+     <item label="FreeTube" icon ="/usr/local/share/icons/Papirus/48x48/apps/freetube.svg">
+        <action name="Execute">
+          <command>freetube</command>
         </action>
       </item>
       <item label="QWinFF" icon ="/usr/local/share/icons/Papirus/48x48/apps/ffmpeg.svg ">
@@ -365,11 +370,6 @@
           <command>gcolor3</command>
         </action>
 		</item>
-     <item label="Battery Info" icon="/usr/local/share/icons/Papirus/48x48/apps/xfce4-battery-plugin.svg">
-         <action name="Execute">
-		<command>st -f "monospace:size=11" -e /home/ivan/Scripts/apm.sh</command>
-       </action>
-	 </item>
 	</menu>
 
       <menu id="submenu-config" label="Settings" icon="/usr/local/share/icons/Numix/48/apps/jockey.svg">
