@@ -10,7 +10,7 @@ export MESA_VK_WSI_PRESENT_MODE=mailbox
 export MESA_VK_WSI_DEBUG=buffer
 gnome-keyring-daemon --unlock --components=secrets < ~/.keyring-pass >/dev/null 2>&1
 
-mixer vol=0.35:0.30
+mixer vol=0.40:0.30
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Accel Speed" 0.20
 xinput set-prop "TPPS/2 IBM TrackPoint" "libinput Accel Speed" 0.20
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
