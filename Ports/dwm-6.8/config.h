@@ -57,6 +57,8 @@ static const Rule rules[] = {
 	{ "feh",                          NULL,     NULL,  0,         1,          -1 },
 	{ "pcsx2-qt",                     NULL,     NULL,  0,         1,          -1 },
 	{ "dolphin-emu",                  NULL,     NULL,  0,         1,          -1 },
+	{ "Rosalie's Mupen GUI",          NULL,     NULL,  0,         1,          -1 },
+	{ "Nestopia",                     NULL,     NULL,  0,         1,          -1 },
 	{ "cmr2.exe",                     NULL,     NULL,  0,         1,          -1 },
     { "principal-Aplicacao",          NULL,     NULL,  0,         1,          -1 },
 	{ "Xarchiver",                    NULL,     NULL,  0,         1,          -1 },
@@ -70,6 +72,7 @@ static const Rule rules[] = {
 	{ "codium",                       NULL,     NULL,  1 << 6,    0,          -1 },
 	{ "code-oss",                     NULL,     NULL,  1 << 6,    0,          -1 },
 	{ "zapfast",                      NULL,     NULL,  1 << 8,    0,          -1 },
+    { "TelegramDesktop",              NULL,     NULL,  1 << 7,    0,          -1 },
 };
 
 /* layout(s) */
@@ -124,6 +127,8 @@ static const char *resizecmd[] = {"/home/ivan/Scripts/screen.sh", NULL};
 static const char *pausecmd[] = {"/home/ivan/Scripts/mpv-command.py", "cycle", "pause", NULL};
 static const char *skippycmd[] = {"skippy-xd", NULL};
 static const char *zapcmd[]= {"zapfast", NULL};
+static const char *telcmd[]= {"Telegram", NULL};
+
 
 static Key keys[] = { 
 	/* modifier                     key        function        argument */
@@ -165,7 +170,8 @@ static Key keys[] = {
     { MODKEY,                       XK_s,      spawn,          {.v = skippycmd }},
     { MODKEY|ShiftMask,             XK_s,      spawn,          {.v = resizecmd } },
     { MODKEY,                       XK_p,      spawn,          {.v = pausecmd }},
-    { MODKEY|ShiftMask,            XK_z,      spawn,          {.v = zapcmd }},
+    { MODKEY|ShiftMask,             XK_z,      spawn,          {.v = zapcmd }},
+    { MODKEY|ShiftMask,             XK_t,      spawn,          {.v = telcmd }},
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
