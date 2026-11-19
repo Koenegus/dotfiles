@@ -13,13 +13,16 @@ fm)
     /home/ivan/Scripts/thunar.sh &
 	;;
 Browsers)
-   app=$(printf "Librewolf\nTor\n" | dmenu -b -fn JetBrainsMonoNerdFont:size=8 -sb red)
+   app=$(printf "Librewolf\nBrave\nTor\n" | dmenu -b -fn JetBrainsMonoNerdFont:size=8 -sb red)
    case "$app" in
    Librewolf)
-		doas jexec -u ivan browsers librewolf &
+		librewolf &
 		;;
+   Brave)
+        brave &
+        ;;
    Tor)
-	    doas jexec -u ivan browsers tor-browser &
+	    tor-browser &
    esac
    ;;
 Transgui)
