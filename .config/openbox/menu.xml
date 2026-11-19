@@ -20,16 +20,21 @@
         </action>
 		</item>
 
-	<menu id="submenu-internet" label="Browsers" icon="/usr/local/share/icons/Papirus/48x48/apps/knemo.svg">
-	    <item label="Librewolf" icon="/usr/local/share/icons/Papirus/48x48/apps/librewolf.svg">
+	  <menu id="submenu-internet" label="Browsers" icon="/usr/local/share/icons/Papirus/48x48/apps/knemo.svg">
+	   <item label="Librewolf" icon="/usr/local/share/icons/Papirus/48x48/apps/librewolf.svg">
         <action name="Execute">
-          <command>doas jexec -u ivan browsers librewolf</command>
+          <command>librewolf</command>
+        </action>
+       </item>
+	   <item label="Brave" icon="/usr/local/share/icons/Papirus/48x48/apps/brave-browser.svg">
+        <action name="Execute">
+          <command>brave</command>
         </action>
       </item>
       <item label="Tor Browser" icon ="/usr/local/share/icons/Papirus/48x48/apps/tor-browser.svg ">
         <action name="Execute">
-          <command>doas jexec -u ivan browsers tor-browser</command>
-        </action>
+          <command>tor-browser</command>
+         </action>
 		</item>
    </menu>
 
@@ -67,11 +72,16 @@
           <command>geany</command>
         </action>
 		</item>
-      <item label="VS Code" icon ="/usr/local/share/icons/Papirus/48x48/apps/vscode.svg">
+      <item label="VSCodium" icon ="/usr/local/share/icons/Papirus/48x48/apps/vscodium.svg">
         <action name="Execute">
           <command>codium</command>
         </action>
-      </item>
+       </item>
+       <item label="Yaoqiang" icon ="/usr/local/share/icons/Papirus/48x48/apps/org.gnome.Notes.svg">
+        <action name="Execute">
+          <command>yaoqiang</command>
+         </action>
+        </item>
    </menu>
 
    <menu id="submenu-graphics" label="Graphics" icon="/usr/local/share/icons/Papirus/48x48/categories/gnome-paint.svg">
@@ -80,7 +90,7 @@
           <command>gimp</command>
         </action>
 		</item>
-       <item label="PhotoCraft" icon ="/home/ivan/Ports/photocraft-0.7.0-freebsd-x86_64/share/icons/hicolor/32x32/apps/ai.storyteller.photocraft.png">
+        <item label="PhotoCraft" icon ="/usr/local/share/icons/Papirus/48x48/apps/AdobePhotoshop.svg">
         <action name="Execute">
           <command>photocraft</command>
         </action>
@@ -132,6 +142,11 @@
        <item label="Telegram" icon ="/usr/local/share/icons/Papirus/48x48/apps/telegram.svg ">
         <action name="Execute">
           <command>Telegram</command>
+        </action>
+       </item>
+       <item label="Zapfast" icon ="/usr/local/share/icons/Papirus/48x48/apps/whatsapp.svg">
+        <action name="Execute">
+          <command>zapfast</command>
         </action>
        </item>
        <item label="Hexchat" icon ="/usr/local/share/icons/Papirus/48x48/apps/hexchat.svg ">
@@ -234,6 +249,16 @@
 		   <command>dolphin-emu</command>
         </action>
        </item>
+	   <item label="Nestopia" icon ="/usr/local/share/icons/Papirus/48x48/apps/nestopia.svg">
+        <action name="Execute">
+		   <command>nestopia</command>
+        </action>
+       </item>
+	   <item label="RMG" icon ="/usr/local/share/icons/Papirus/48x48/apps/rmg.svg">
+        <action name="Execute">
+		   <command>RMG</command>
+        </action>
+       </item>
        <item label="DOSBox-staging" icon="/usr/local/share/icons/Papirus/48x48/apps/dosbox-staging.svg">
         <action name="Execute">
           <command>dosbox-staging</command>
@@ -280,6 +305,11 @@
 	<item label="Little Witch Romanesque" icon="/home/ivan/Pictures/icons/lwr.ico">
         <action name="Execute">
 		  <command>/home/ivan/Scripts/lwr.sh</command>
+        </action>
+    </item>
+	<item label="Rance01" icon="/home/ivan/Pictures/icons/rance.png">
+        <action name="Execute">
+		  <command>/home/ivan/Scripts/rance.sh</command>
         </action>
     </item>
 	<item label="Tears to Tiara" icon="/home/ivan/Pictures/icons/TtT.png">
@@ -354,7 +384,7 @@
         <action name="Execute">
           <command>anki</command>
          </action>
-        </item>
+       </item>
        <item label="XArchiver" icon ="/usr/local/share/icons/Papirus/48x48/apps/xarchiver.svg">
         <action name="Execute">
           <command>xarchiver</command>
