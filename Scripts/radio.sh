@@ -1,5 +1,5 @@
 #!/bin/sh
-listen="mpv --no-audio-display --input-ipc-server=/tmp/mpv.sock "
+listen="mpv --no-audio-display --input-ipc-server=/tmp/mpv.sock --term-status-msg=\${time-pos}|\${media-title} "
 yout="mpv --no-video --input-ipc-server=/tmp/mpv.sock "
 dir="/home/ivan/Music"
 random="mpv --no-audio-display --input-ipc-server=/tmp/mpv.sock --shuffle "
