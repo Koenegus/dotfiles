@@ -66,7 +66,6 @@ alias pgadmin4='librewolf http://10.0.1.2:5050'
 alias captura='nomacs /home/ivan/Pictures/Screenshots/2026 &'
 alias wine32='WINEPREFIX="/home/ivan/.wine32" wine '
 alias wine64='WINEPREFIX="/home/ivan/.wine" wine '
-alias handbook='zathura /home/ivan/Documents/FreeBSD/handbook_en.pdf'
 alias ppo='/home/ivan/Scripts/pkg_rinfo.sh'
 alias ports-update='/home/ivan/Scripts/ports-update.sh'
 alias radio='/home/ivan/Scripts/radio.sh'
@@ -90,8 +89,8 @@ alias vncviewer='vncviewer 127.0.0.1:5900'
 alias pkg_check='/home/ivan/Scripts/pkg-preupgrade.sh'
 alias groff='groff -Kutf8 -Tutf8'
 alias caffeine='/home/ivan/Scripts/caffeine.sh'
-alias freetube='doas jexec -u ivan electron /home/ivan/freetube.sh'
 alias yt='/home/ivan/Scripts/youtube.sh'
+alias bye='acpiconf -s 4'
 
 #######
 export PATH="$HOME/.local/bin:$HOME/bin:$PATH"
@@ -100,6 +99,7 @@ export EDITOR=nvim
 
 #JAVA
 export _JAVA_OPTIONS="-Dawt.useSystemAAFontSettings=lcd -Dswing.aatext=true -Dsun.java1d.xrender=true"
+export JDK_JAVA_OPTIONS=""
 
 # Enforce UTF-8 locale in environment variables
 export LC_ALL="en_US.UTF-8"
