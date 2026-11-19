@@ -20,14 +20,19 @@ xhost +local:
 
 feh --bg-fill ~/Pictures/Wallpapers/chatos/hermit.png &
 picom &
-/home/ivan/Scripts/dzen2.sh &
 redshift -l -27.596670:-48.549170 -t 6000:4800 &
-
 tmux new-session -d -s chat_session nchat &
 mpg123 /home/ivan/Music/Sounds/macOS_X.mp3 > /dev/dsp 2> /dev/null & 
 
-/home/ivan/Scripts/dwm-status &
+xbindkeys &
+tint2 &
 
-exec dwm
+sleep 3 && wpa_gui -t &
+/home/ivan/Scripts/dzen2.sh &
+
+xidle -area 3 -delay 0 -sw -program "/usr/local/bin/skippy-xd" &
+xidle -area 3 -delay 0 -se -program "/home/ivan/Scripts/desktop.sh" &
+sleep 2 && caja --force-desktop &
+sleep 1 && exec openbox
 '
 
