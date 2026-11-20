@@ -18,7 +18,7 @@ xsetroot -cursor_name left_ptr
 setxkbmap -layout br -variant thinkpad
 xhost +local:
 
-feh --bg-fill ~/Pictures/Wallpapers/chatos/hermit.png &
+feh --bg-fill ~/Pictures/Wallpapers/iria.jpg &
 picom &
 redshift -l -27.596670:-48.549170 -t 6000:4800 &
 tmux new-session -d -s chat_session nchat &
