@@ -59,8 +59,12 @@
 "slock"
     Mod4 + l
 
+#zap
+"zapfast"
+    Mod4 + z
+
 # Suspend
-"/home/ivan/Scripts/lock.sh"
+"zzz"
     Mod4 + Shift + l
 
 # Restart Tint2
