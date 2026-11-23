@@ -48,6 +48,8 @@ static const Rule rules[] = {
 	{ "org.dosbox_staging.dosbox_staging", NULL, NULL, 0,         1,          -1 },
 	{ "Snes9x-gtk",                   NULL,     NULL,  0,         1,          -1 },
 	{ "pwcview",                      NULL,     NULL,  0,         1,          -1 },
+    { "Wifimgr",                      NULL,     NULL,  0,         1,          -1 },
+    { "yaoqiang-Yaoqiang",            NULL,     NULL,  0,         1,          -1 },
 	{ "lumina-calculator",            NULL,     NULL,  0,         1,          -1 },
 	{ "micropolisj-Micropolis",       NULL,     NULL,  0,         1,          -1 },
 	{ "fbsd-duckstation-qt",          NULL,     NULL,  0,         1,          -1 },
@@ -60,9 +62,11 @@ static const Rule rules[] = {
 	{ "Rosalie's Mupen GUI",          NULL,     NULL,  0,         1,          -1 },
 	{ "Nestopia",                     NULL,     NULL,  0,         1,          -1 },
 	{ "cmr2.exe",                     NULL,     NULL,  0,         1,          -1 },
+	{ "steam_proton",                 NULL,     NULL,  0,         1,          -1 },
     { "principal-Aplicacao",          NULL,     NULL,  0,         1,          -1 },
 	{ "Xarchiver",                    NULL,     NULL,  0,         1,          -1 },
 	{ "librewolf",                    NULL,     NULL,  1 << 1,    0,          -1 },
+	{ "Brave-browser",                NULL,     NULL,  1 << 1,    0,          -1 },
 	{ "qutebrowser",                  NULL,     NULL,  1 << 1,    0,          -1 },
 	{ "tor-browser",                  NULL,     NULL,  1 << 1,    0,          -1 },
 	{ "mpv",                          NULL,     NULL,  1 << 4,    0,          -1 },
@@ -105,7 +109,7 @@ static const Layout layouts[] = {
 static char dmenumon[2] = "0"; /* component of dmenucmd, manipulated in spawn() */
 static const char *dmenucmd[] = {"dmenu", NULL};
 static const char *menucmd[] = { "/home/ivan/Scripts/dmenu.sh", NULL };
-static const char *webcmd[] = { "doas", "jexec", "-u", "ivan", "browsers", "librewolf", NULL};
+static const char *webcmd[] = { "doas", "jexec", "-u", "ivan", "browsers", "brave", NULL};
 static const char *fmcmd[] = { "/home/ivan/Scripts/thunar.sh", NULL};
 static const char *officecmd[] = { "libreoffice", NULL};
 static const char *mailcmd[] = { "claws-mail", NULL };
@@ -128,6 +132,7 @@ static const char *pausecmd[] = {"/home/ivan/Scripts/mpv-command.py", "cycle", "
 static const char *skippycmd[] = {"skippy-xd", NULL};
 static const char *zapcmd[]= {"zapfast", NULL};
 static const char *telcmd[]= {"Telegram", NULL};
+static const char *wifi[]= {"wifimgr", NULL};
 
 
 static Key keys[] = { 
@@ -172,6 +177,7 @@ static Key keys[] = {
     { MODKEY,                       XK_p,      spawn,          {.v = pausecmd }},
     { MODKEY|ShiftMask,             XK_z,      spawn,          {.v = zapcmd }},
     { MODKEY|ShiftMask,             XK_t,      spawn,          {.v = telcmd }},
+    { MODKEY,                       XK_n,      spawn,          {.v = wifi }},
 	TAGKEYS(                        XK_1,                      0)
 	TAGKEYS(                        XK_2,                      1)
 	TAGKEYS(                        XK_3,                      2)
