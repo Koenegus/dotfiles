@@ -7,8 +7,8 @@
 "/home/ivan/Scripts/dmenu.sh"
     Mod4 + r
 
-# LibreWolf
-"doas jexec -u ivan browsers librewolf"
+# Brave
+"doas jexec -u ivan browsers brave"
     Mod4 + w
 
 # VSCode
@@ -92,13 +92,17 @@
     XF86MonBrightnessDown
 
 "/home/ivan/Scripts/audio_up.sh"
-  XF86AudioRaiseVolume
+    XF86AudioRaiseVolume
 
 "/home/ivan/Scripts/audio_down.sh"
-  XF86AudioLowerVolume
+    XF86AudioLowerVolume
 
 "/home/ivan/Scripts/audio_mute.sh"
-  XF86AudioMute
+    XF86AudioMute
+
+#monitor
+"/home/ivan/Scripts/projetor.sh"
+    Mod4 + F7
 
 #bspwm
 #"bspc node -f west"
