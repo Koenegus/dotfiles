@@ -149,6 +149,11 @@
           <command>zapfast</command>
         </action>
        </item>
+       <item label="DiscordBSD" icon ="/usr/local/share/icons/Papirus/48x48/apps/discord.svg">
+        <action name="Execute">
+          <command>discord</command>
+        </action>
+       </item>
        <item label="Hexchat" icon ="/usr/local/share/icons/Papirus/48x48/apps/hexchat.svg ">
         <action name="Execute">
           <command>hexchat</command>
