@@ -20,13 +20,13 @@ battery() {
 
 (
     while true; do
-        curl -s 'wttr.in/?format=1' > /tmp/weather.tmp && mv /tmp/weather.tmp /tmp/weather
+        curl -s 'wttr.in/?format=1' > /home/ivan/Scripts/weather.tmp && mv /home/ivan/Scripts/weather.tmp /home/ivan/Scripts/weather
         sleep "$WEATHER_INTERVAL"
     done
 ) &
 
 while true; do
-    WEATHER=$(cat /tmp/weather 2>/dev/null)
+    WEATHER=$(cat /home/ivan/Scripts/weather 2>/dev/null)
     xsetroot -name "$WEATHER | $(volume) | BAT $(battery) | $(date '+%a %d/%m %H:%M:%S')"
     sleep 1
 done
