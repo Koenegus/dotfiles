@@ -10,7 +10,7 @@
 
     <item label="File Manager" icon="/usr/local/share/icons/Numix/48/places/folder.svg">
       <action name="Execute">
-        <command>thunar</command>
+        <command>pcmanfm</command>
       </action>
 	</item>
 
@@ -77,9 +77,9 @@
           <command>codium</command>
         </action>
        </item>
-       <item label="Yaoqiang" icon ="/usr/local/share/icons/Papirus/48x48/apps/org.gnome.Notes.svg">
+       <item label="Modelio" icon ="/usr/local/share/icons/Papirus/48x48/apps/modelio.svg">
         <action name="Execute">
-          <command>yaoqiang</command>
+          <command>modelio</command>
          </action>
         </item>
    </menu>
