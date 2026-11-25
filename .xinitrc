@@ -10,7 +10,7 @@ export MESA_VK_WSI_PRESENT_MODE=mailbox
 export MESA_VK_WSI_DEBUG=buffer
 gnome-keyring-daemon --unlock --components=secrets < ~/.keyring-pass >/dev/null 2>&1
 
-mixer vol=0.30:0.20
+mixer vol=0.40:0.30
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Accel Speed" 0.20
 xinput set-prop "TPPS/2 IBM TrackPoint" "libinput Accel Speed" 0.20
 xinput set-prop "SynPS/2 Synaptics TouchPad" "libinput Natural Scrolling Enabled" 1
@@ -23,9 +23,14 @@ picom &
 redshift -l -27.596670:-48.549170 -t 6000:4800 &
 tmux new-session -d -s chat_session nchat &
 mpg123 /home/ivan/Music/Sounds/macOS_X.mp3 > /dev/dsp 2> /dev/null & 
-/home/ivan/Scripts/dzen2.sh &
-/home/ivan/Scripts/dwm-status &
 
-exec dwm
+xbindkeys &
+tint2 &
+
+/home/ivan/Scripts/dzen2.sh &
+
+xidle -area 3 -delay 0 -sw -program "/usr/local/bin/skippy-xd" &
+xidle -area 3 -delay 0 -se -program "/home/ivan/Scripts/desktop.sh" &
+sleep 1 && exec openbox
 '
 
