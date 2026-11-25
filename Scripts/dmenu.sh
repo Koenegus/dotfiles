@@ -10,7 +10,7 @@ Term)
     /home/ivan/Scripts/term.sh &
 	;;
 fm)
-    /home/ivan/Scripts/thunar.sh &
+    pcmanfm &
 	;;
 Browsers)
    app=$(printf "Librewolf\nBrave\nTor\n" | dmenu -b -fn JetBrainsMonoNerdFont:size=8 -sb red)
