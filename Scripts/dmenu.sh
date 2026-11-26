@@ -1,6 +1,6 @@
 #!/bin/sh
 
-main=$(printf "Search\nTerm\nfm\nBrowsers\nTransgui\nMail\nPodman\nPostgreSQL\nCaffeine\ni2pd\nVOSS\ntailscale\nVPN\nwebcamd\nUnmount\nPrint\nxkill\nslock\nWifi\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn JetBrainsMonoNerdFont:size=8 -sb red)
+main=$(printf "Search\nTerm\nfm\nBrowsers\nTransgui\nMail\nPostgreSQL\nCaffeine\ni2pd\nVOSS\ntailscale\nVPN\nwebcamd\nUnmount\nPrint\nxkill\nslock\nWifi\nSuspend\nLog_Out\nReboot\nPower_Off\n" | dmenu -b -fn JetBrainsMonoNerdFont:size=8 -sb red)
 
 case "$main" in
 Search)
@@ -31,16 +31,6 @@ Transgui)
 Mail)
     claws-mail &
 	;;
-Podman)
-    app=$(printf "pgadmin4_start\npgadmin4_stop\n" | dmenu -b -fn JetBrainsMonoNerdFont:size=8 -sb red)
-    case "$app" in 
-    pgadmin4_start)
-        /home/ivan/Scripts/podman_start.sh &
-        ;;
-    pgadmin4_stop)
-        /home/ivan/Scripts/podman_stop.sh &
-    esac
-    ;;
 PostgreSQL)
    app=$(printf "Start_Service\nStop_Service\n" | dmenu -b -fn JetBrainsMonoNerdFont:size=8 -sb red)
    case "$app" in
@@ -124,7 +114,7 @@ slock)
     slock &
 	;;
 Wifi)
-    /home/ivan/Scripts/wifibox.sh &
+    /home/ivan/Scripts/:re.sh &
 	;;
 Suspend)
     /home/ivan/Scripts/lock.sh &
