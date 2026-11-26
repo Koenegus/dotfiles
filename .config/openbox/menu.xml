@@ -174,59 +174,7 @@
           <command>transgui</command>
         </action>
       </item>
-    </menu>
-
-   <menu id="submenu-data" label="Database" icon="/usr/local/share/icons/Papirus/48x48/apps/sqliteman.svg">
-      <menu id="submenu-podman" label="pgAdmin 4" icon="/usr/local/share/icons/Papirus/48x48/apps/pgadmin4.svg">
-       <item label="Start Podman">
-        <action name="Execute">
-		  <command>/home/ivan/Scripts/podman_start.sh</command>
-        </action>
-       </item>
-       <item label="Stop Podman">
-        <action name="Execute">
-		  <command>/home/ivan/Scripts/podman_stop.sh</command>
-        </action>
-		</item>
-       <item label="Interface" icon>
-        <action name="Execute">
-		  <command>doas jexec -u ivan browsers librewolf http://10.0.0.2:8080</command>
-        </action>
-		</item>
-	  </menu>
-
-       <item label="DBeaver" icon ="/usr/local/share/icons/Papirus/48x48/apps/dbeaver.svg ">
-        <action name="Execute">
-          <command>dbeaver</command>
-        </action>
-		</item>
-
-      <menu id="submenu-brmodelo" label="brModelo" icon ="/home/ivan/Pictures/icons/brmodelo1.png">
-       <item label="Wine" icon="/usr/local/share/icons/Papirus/48x48/apps/wine.svg">
-        <action name="Execute">
-		  <command>/home/ivan/Scripts/brmodelo_win.sh</command>
-        </action>
-       </item>
-       <item label="Java" icon="/usr/local/share/icons/Papirus/48x48/apps/java.svg">
-		  <action name="Execute">
-		  <command>/home/ivan/Scripts/brmodelo.sh</command>
-        </action>
-      </item>
-     </menu>
-      <menu id="submenu-postgre" label="postgresql" icon="/usr/local/share/icons/Papirus/48x48/apps/sqldeveloper.svg">
-       <item label="Start Service">
-        <action name="Execute">
-		  <command>/home/ivan/Scripts/postgresql_start.sh</command>
-        </action>
-       </item>
-       <item label="Stop Service">
-        <action name="Execute">
-		  <command>/home/ivan/Scripts/postgresql_stop.sh</command>
-        </action>
-       </item>
-	  </menu>
-    </menu>
-
+    </menu> 
     <menu id="submenu-games" label="Games" icon="/usr/local/share/icons/Papirus/48x48/devices/wiimotedev.svg">
       <menu id="submenu-emu" label="Emulators" icon="/usr/local/share/icons/Papirus/48x48/apps/yast-hardware.svg">
        <item label="Snes9x" icon ="/usr/local/share/icons/Papirus/48x48/apps/snes9x.svg">
@@ -257,6 +205,11 @@
 	   <item label="Nestopia" icon ="/usr/local/share/icons/Papirus/48x48/apps/nestopia.svg">
         <action name="Execute">
 		   <command>nestopia</command>
+        </action>
+      </item>
+	   <item label="MelonDS" icon ="/usr/local/share/icons/Papirus/48x48/apps/net.kuribo64.melonDS.svg">
+        <action name="Execute">
+		   <command>melonDS</command>
         </action>
        </item>
 	   <item label="RMG" icon ="/usr/local/share/icons/Papirus/48x48/apps/rmg.svg">
